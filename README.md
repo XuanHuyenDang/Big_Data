@@ -1,13 +1,14 @@
-# Big_Data
+# Ứng dụng Hadoop Ecosystem trong phân tích dữ liệu thời tiết tại Việt Nam
+
 ----- Thông tin đề tài ---------------------
-STT: ...
-Tên đề tài: ...
-Lớp học phần: <mã_học_phần>_xx
-Năm học: HKx/20xx-20xx
+STT: 03
+Tên đề tài: Ứng dụng Hadoop Ecosystem trong phân tích dữ liệu thời tiết tại Việt Nam
+Lớp học phần: BDES333877_04
+Năm học: HK2/2025-2026
 --------------------------------------------
 Thông tin nhóm
-1. Họ tên sinh viên trưởng nhóm (mã số sinh viên trưởng nhóm) – SĐT – Email cá nhân
-2. Họ tên sinh viên 2 (mã số sinh viên 2)
-3. Họ tên sinh viên 3 (mã số sinh viên 3)
-4. Họ tên sinh viên 4 (mã số sinh viên 4)
-5. Họ tên sinh viên 5 (mã số sinh viên 5)
+1. Đặng Xuân Huyền - 23110232 – 0835998274 – 23110232@student.hcmute.edu.vn/ dangxuanhuyen2005@gmail.com
+2. Bùi Quốc Hậu - 23110211
+3. Triệu Phúc Hiếu - 23110217
+4. Phạm Võ Nhất Kha - 23110235
+5. Nguyễn Trần Quốc Thi - 23110331
