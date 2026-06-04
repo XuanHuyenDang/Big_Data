@@ -1,0 +1,590 @@
+﻿datetime,province,region,temperature,humidity,precipitation,wind_speed,pressure,weather_code,source
+2026-01-01,Gia Lai,Central Highlands Vietnam,19.2,,0.0,14.0,1013.4,Clear,Meteostat Daily
+2026-01-02,Gia Lai,Central Highlands Vietnam,18.4,,0.0,22.4,1016.2,Clear,Meteostat Daily
+2026-01-03,Gia Lai,Central Highlands Vietnam,18.2,,0.0,21.6,1017.2,Clear,Meteostat Daily
+2026-01-04,Gia Lai,Central Highlands Vietnam,18.9,,0.0,18.3,1016.3,Clear,Meteostat Daily
+2026-01-05,Gia Lai,Central Highlands Vietnam,19.3,,0.0,17.7,1016.5,Clear,Meteostat Daily
+2026-01-06,Gia Lai,Central Highlands Vietnam,18.5,,0.0,22.4,1017.9,Clear,Meteostat Daily
+2026-01-07,Gia Lai,Central Highlands Vietnam,17.9,,0.0,22.5,1018.7,Clear,Meteostat Daily
+2026-01-08,Gia Lai,Central Highlands Vietnam,16.8,,0.0,22.3,1018.9,Clear,Meteostat Daily
+2026-01-09,Gia Lai,Central Highlands Vietnam,15.7,,0.0,18.4,1018.2,Clear,Meteostat Daily
+2026-01-10,Gia Lai,Central Highlands Vietnam,16.2,,0.0,15.7,1017.0,Clear,Meteostat Daily
+2026-01-11,Gia Lai,Central Highlands Vietnam,17.0,,0.0,18.7,1018.6,Clear,Meteostat Daily
+2026-01-12,Gia Lai,Central Highlands Vietnam,18.1,,0.0,14.4,1017.6,Clear,Meteostat Daily
+2026-01-13,Gia Lai,Central Highlands Vietnam,18.7,,0.0,13.7,1016.6,Clear,Meteostat Daily
+2026-01-14,Gia Lai,Central Highlands Vietnam,19.5,,0.0,13.4,1015.0,Clear,Meteostat Daily
+2026-01-15,Gia Lai,Central Highlands Vietnam,20.1,,0.0,12.9,1014.4,Clear,Meteostat Daily
+2026-01-16,Gia Lai,Central Highlands Vietnam,20.7,,0.0,12.2,1012.9,Clear,Meteostat Daily
+2026-01-17,Gia Lai,Central Highlands Vietnam,20.7,,0.0,12.4,1011.4,Clear,Meteostat Daily
+2026-01-18,Gia Lai,Central Highlands Vietnam,20.6,,0.0,12.5,1010.8,Clear,Meteostat Daily
+2026-01-19,Gia Lai,Central Highlands Vietnam,20.3,,0.0,14.4,1012.2,Clear,Meteostat Daily
+2026-01-20,Gia Lai,Central Highlands Vietnam,19.7,,0.0,16.5,1013.6,Clear,Meteostat Daily
+2026-01-21,Gia Lai,Central Highlands Vietnam,18.6,,0.0,18.7,1015.7,Clear,Meteostat Daily
+2026-01-22,Gia Lai,Central Highlands Vietnam,18.6,,0.0,19.7,1017.4,Clear,Meteostat Daily
+2026-01-23,Gia Lai,Central Highlands Vietnam,18.7,,0.0,20.4,1018.8,Clear,Meteostat Daily
+2026-01-24,Gia Lai,Central Highlands Vietnam,18.4,,0.0,17.9,1018.5,Clear,Meteostat Daily
+2026-01-25,Gia Lai,Central Highlands Vietnam,18.6,,0.0,15.9,1017.2,Clear,Meteostat Daily
+2026-01-26,Gia Lai,Central Highlands Vietnam,19.1,,0.0,16.6,1017.2,Clear,Meteostat Daily
+2026-01-27,Gia Lai,Central Highlands Vietnam,19.7,,0.0,14.9,1017.3,Clear,Meteostat Daily
+2026-01-28,Gia Lai,Central Highlands Vietnam,19.3,,0.0,19.2,1017.2,Clear,Meteostat Daily
+2026-01-29,Gia Lai,Central Highlands Vietnam,19.2,,0.0,16.4,1016.8,Clear,Meteostat Daily
+2026-01-30,Gia Lai,Central Highlands Vietnam,20.1,,0.0,13.6,1017.0,Clear,Meteostat Daily
+2026-01-31,Gia Lai,Central Highlands Vietnam,19.9,,0.0,14.7,1017.3,Clear,Meteostat Daily
+2026-02-01,Gia Lai,Central Highlands Vietnam,19.9,,0.0,18.4,1017.6,Clear,Meteostat Daily
+2026-02-02,Gia Lai,Central Highlands Vietnam,19.8,,0.0,22.4,1017.9,Clear,Meteostat Daily
+2026-02-03,Gia Lai,Central Highlands Vietnam,21.0,,0.0,22.4,1017.5,Clear,Meteostat Daily
+2026-02-04,Gia Lai,Central Highlands Vietnam,21.2,,0.0,16.0,1016.4,Clear,Meteostat Daily
+2026-02-05,Gia Lai,Central Highlands Vietnam,21.7,,0.0,12.0,1014.9,Clear,Meteostat Daily
+2026-02-06,Gia Lai,Central Highlands Vietnam,22.7,,0.0,10.6,1013.3,Clear,Meteostat Daily
+2026-02-07,Gia Lai,Central Highlands Vietnam,22.1,,0.1,11.5,1014.1,Light Rain,Meteostat Daily
+2026-02-08,Gia Lai,Central Highlands Vietnam,20.5,,0.0,22.0,1015.9,Clear,Meteostat Daily
+2026-02-09,Gia Lai,Central Highlands Vietnam,20.6,,0.0,21.5,1015.7,Clear,Meteostat Daily
+2026-02-10,Gia Lai,Central Highlands Vietnam,20.6,,0.0,18.1,1015.9,Clear,Meteostat Daily
+2026-02-11,Gia Lai,Central Highlands Vietnam,21.5,,2.1,17.6,1016.5,Light Rain,Meteostat Daily
+2026-02-15,Gia Lai,Central Highlands Vietnam,22.5,,0.0,17.9,1012.6,Clear,Meteostat Daily
+2026-02-16,Gia Lai,Central Highlands Vietnam,22.3,,0.0,18.8,1012.9,Clear,Meteostat Daily
+2026-02-17,Gia Lai,Central Highlands Vietnam,22.1,,0.0,20.7,1013.9,Clear,Meteostat Daily
+2026-02-18,Gia Lai,Central Highlands Vietnam,22.0,,0.0,22.1,1015.6,Clear,Meteostat Daily
+2026-02-19,Gia Lai,Central Highlands Vietnam,21.5,,0.0,22.8,1017.0,Clear,Meteostat Daily
+2026-02-20,Gia Lai,Central Highlands Vietnam,21.1,,0.0,20.8,1016.5,Clear,Meteostat Daily
+2026-02-21,Gia Lai,Central Highlands Vietnam,22.1,,0.0,14.6,1012.0,Clear,Meteostat Daily
+2026-02-22,Gia Lai,Central Highlands Vietnam,23.0,,0.0,11.3,1010.2,Clear,Meteostat Daily
+2026-02-23,Gia Lai,Central Highlands Vietnam,23.5,,0.0,14.1,1010.6,Clear,Meteostat Daily
+2026-02-24,Gia Lai,Central Highlands Vietnam,23.6,,0.0,12.5,1011.1,Clear,Meteostat Daily
+2026-02-25,Gia Lai,Central Highlands Vietnam,23.2,,0.0,14.1,1011.8,Clear,Meteostat Daily
+2026-02-26,Gia Lai,Central Highlands Vietnam,23.1,,2.0,13.5,1010.8,Light Rain,Meteostat Daily
+2026-02-27,Gia Lai,Central Highlands Vietnam,21.4,,25.2,7.2,1010.2,Heavy Rain,Meteostat Daily
+2026-02-28,Gia Lai,Central Highlands Vietnam,22.7,,0.0,6.6,1009.6,Clear,Meteostat Daily
+2026-03-01,Gia Lai,Central Highlands Vietnam,22.9,,2.1,6.9,1010.0,Light Rain,Meteostat Daily
+2026-03-02,Gia Lai,Central Highlands Vietnam,23.3,,4.1,6.5,1011.1,Light Rain,Meteostat Daily
+2026-03-03,Gia Lai,Central Highlands Vietnam,22.7,,11.3,7.4,1011.6,Rain,Meteostat Daily
+2026-03-04,Gia Lai,Central Highlands Vietnam,21.9,,7.5,12.5,1012.2,Rain,Meteostat Daily
+2026-03-05,Gia Lai,Central Highlands Vietnam,21.7,,3.4,12.1,1012.3,Light Rain,Meteostat Daily
+2026-03-06,Gia Lai,Central Highlands Vietnam,21.5,,1.4,15.5,1013.5,Light Rain,Meteostat Daily
+2026-03-07,Gia Lai,Central Highlands Vietnam,21.2,,0.0,17.3,1014.4,Clear,Meteostat Daily
+2026-03-08,Gia Lai,Central Highlands Vietnam,21.4,,0.0,17.6,1014.2,Clear,Meteostat Daily
+2026-03-09,Gia Lai,Central Highlands Vietnam,22.3,,0.0,19.8,1015.0,Clear,Meteostat Daily
+2026-03-10,Gia Lai,Central Highlands Vietnam,22.0,,0.6,22.1,1015.8,Light Rain,Meteostat Daily
+2026-03-11,Gia Lai,Central Highlands Vietnam,21.4,,0.0,19.0,1014.7,Clear,Meteostat Daily
+2026-03-12,Gia Lai,Central Highlands Vietnam,20.6,,0.8,19.4,1014.6,Light Rain,Meteostat Daily
+2026-03-13,Gia Lai,Central Highlands Vietnam,21.2,,0.4,20.3,1014.8,Light Rain,Meteostat Daily
+2026-03-14,Gia Lai,Central Highlands Vietnam,20.8,,1.2,20.7,1016.0,Light Rain,Meteostat Daily
+2026-03-15,Gia Lai,Central Highlands Vietnam,20.6,,0.7,17.7,1016.1,Light Rain,Meteostat Daily
+2026-03-16,Gia Lai,Central Highlands Vietnam,21.0,,0.5,17.2,1014.3,Light Rain,Meteostat Daily
+2026-03-17,Gia Lai,Central Highlands Vietnam,21.7,,0.0,14.6,1013.7,Clear,Meteostat Daily
+2026-03-18,Gia Lai,Central Highlands Vietnam,22.4,,0.1,12.0,1013.6,Light Rain,Meteostat Daily
+2026-03-19,Gia Lai,Central Highlands Vietnam,22.6,,1.7,11.3,1013.3,Light Rain,Meteostat Daily
+2026-03-20,Gia Lai,Central Highlands Vietnam,22.5,,2.1,9.7,1013.5,Light Rain,Meteostat Daily
+2026-03-21,Gia Lai,Central Highlands Vietnam,22.7,,0.0,14.3,1013.8,Clear,Meteostat Daily
+2026-03-22,Gia Lai,Central Highlands Vietnam,22.7,,0.0,15.8,1013.4,Clear,Meteostat Daily
+2026-03-23,Gia Lai,Central Highlands Vietnam,23.3,,0.0,13.0,1012.4,Clear,Meteostat Daily
+2026-03-24,Gia Lai,Central Highlands Vietnam,23.5,,0.0,14.1,1011.2,Clear,Meteostat Daily
+2026-03-25,Gia Lai,Central Highlands Vietnam,23.5,,0.0,12.6,1011.5,Clear,Meteostat Daily
+2026-03-26,Gia Lai,Central Highlands Vietnam,24.9,,0.0,12.6,1011.1,Clear,Meteostat Daily
+2026-03-27,Gia Lai,Central Highlands Vietnam,25.4,,0.0,9.9,1010.3,Clear,Meteostat Daily
+2026-03-28,Gia Lai,Central Highlands Vietnam,25.4,,0.0,11.1,1010.3,Clear,Meteostat Daily
+2026-03-29,Gia Lai,Central Highlands Vietnam,25.3,,0.0,9.5,1011.0,Clear,Meteostat Daily
+2026-03-30,Gia Lai,Central Highlands Vietnam,26.2,,0.0,9.6,1011.1,Clear,Meteostat Daily
+2026-03-31,Gia Lai,Central Highlands Vietnam,26.3,,0.0,9.4,1011.5,Clear,Meteostat Daily
+2026-04-01,Gia Lai,Central Highlands Vietnam,26.8,,0.0,11.3,1011.5,Clear,Meteostat Daily
+2026-04-02,Gia Lai,Central Highlands Vietnam,25.9,,0.0,13.0,1012.2,Clear,Meteostat Daily
+2026-04-03,Gia Lai,Central Highlands Vietnam,25.9,,0.0,9.4,1010.5,Clear,Meteostat Daily
+2026-04-04,Gia Lai,Central Highlands Vietnam,26.6,,0.0,12.5,1009.5,Clear,Meteostat Daily
+2026-04-05,Gia Lai,Central Highlands Vietnam,27.1,,0.0,11.5,1009.3,Clear,Meteostat Daily
+2026-04-06,Gia Lai,Central Highlands Vietnam,27.3,,0.0,13.0,1010.6,Clear,Meteostat Daily
+2026-04-07,Gia Lai,Central Highlands Vietnam,27.1,,0.0,13.4,1011.2,Clear,Meteostat Daily
+2026-04-08,Gia Lai,Central Highlands Vietnam,28.0,,0.0,10.1,1011.1,Clear,Meteostat Daily
+2026-04-09,Gia Lai,Central Highlands Vietnam,27.5,,0.0,10.5,1011.4,Clear,Meteostat Daily
+2026-04-10,Gia Lai,Central Highlands Vietnam,27.6,,0.0,11.6,1011.6,Clear,Meteostat Daily
+2026-04-11,Gia Lai,Central Highlands Vietnam,27.3,,0.0,12.5,1010.3,Clear,Meteostat Daily
+2026-04-12,Gia Lai,Central Highlands Vietnam,27.4,,0.0,10.2,1009.6,Clear,Meteostat Daily
+2026-04-13,Gia Lai,Central Highlands Vietnam,27.1,,0.4,10.1,1010.8,Light Rain,Meteostat Daily
+2026-04-14,Gia Lai,Central Highlands Vietnam,27.1,,1.1,7.9,1010.7,Light Rain,Meteostat Daily
+2026-04-15,Gia Lai,Central Highlands Vietnam,25.4,,4.1,7.9,1010.1,Light Rain,Meteostat Daily
+2026-04-16,Gia Lai,Central Highlands Vietnam,25.1,,3.2,9.6,1010.9,Light Rain,Meteostat Daily
+2026-04-17,Gia Lai,Central Highlands Vietnam,25.2,,0.5,7.8,1011.2,Light Rain,Meteostat Daily
+2026-04-18,Gia Lai,Central Highlands Vietnam,23.8,,3.0,9.3,1011.7,Light Rain,Meteostat Daily
+2026-04-19,Gia Lai,Central Highlands Vietnam,23.8,,0.1,9.0,1011.4,Light Rain,Meteostat Daily
+2026-04-20,Gia Lai,Central Highlands Vietnam,23.9,,0.2,8.6,1011.4,Light Rain,Meteostat Daily
+2026-04-21,Gia Lai,Central Highlands Vietnam,24.2,,0.4,7.9,1010.3,Light Rain,Meteostat Daily
+2026-04-22,Gia Lai,Central Highlands Vietnam,24.4,,0.0,8.7,1009.8,Clear,Meteostat Daily
+2026-04-23,Gia Lai,Central Highlands Vietnam,25.6,,0.0,8.5,1009.1,Clear,Meteostat Daily
+2026-04-24,Gia Lai,Central Highlands Vietnam,25.3,,1.2,9.4,1010.8,Light Rain,Meteostat Daily
+2026-04-25,Gia Lai,Central Highlands Vietnam,24.1,,2.0,13.2,1012.7,Light Rain,Meteostat Daily
+2026-04-26,Gia Lai,Central Highlands Vietnam,24.2,,0.9,11.4,1012.1,Light Rain,Meteostat Daily
+2026-04-27,Gia Lai,Central Highlands Vietnam,24.2,,1.9,10.0,1011.1,Light Rain,Meteostat Daily
+2026-04-28,Gia Lai,Central Highlands Vietnam,23.8,,4.3,7.4,1011.3,Light Rain,Meteostat Daily
+2026-04-29,Gia Lai,Central Highlands Vietnam,24.2,,8.6,6.8,1011.6,Rain,Meteostat Daily
+2026-04-30,Gia Lai,Central Highlands Vietnam,23.7,,6.1,11.4,1013.0,Rain,Meteostat Daily
+2026-05-01,Gia Lai,Central Highlands Vietnam,24.7,,0.0,14.9,1012.4,Clear,Meteostat Daily
+2026-05-02,Gia Lai,Central Highlands Vietnam,25.1,,0.0,8.7,1011.5,Clear,Meteostat Daily
+2026-05-05,Gia Lai,Central Highlands Vietnam,24.0,,13.0,13.6,1012.0,Rain,Meteostat Daily
+2026-05-06,Gia Lai,Central Highlands Vietnam,24.8,,0.2,9.9,1011.2,Light Rain,Meteostat Daily
+2026-05-07,Gia Lai,Central Highlands Vietnam,25.6,,0.2,11.2,1010.6,Light Rain,Meteostat Daily
+2026-05-08,Gia Lai,Central Highlands Vietnam,25.1,,0.0,15.5,1011.2,Clear,Meteostat Daily
+2026-05-09,Gia Lai,Central Highlands Vietnam,24.7,,2.4,16.1,1012.1,Light Rain,Meteostat Daily
+2026-05-10,Gia Lai,Central Highlands Vietnam,25.2,,0.3,16.8,1011.8,Light Rain,Meteostat Daily
+2026-05-11,Gia Lai,Central Highlands Vietnam,25.6,,0.0,15.4,1011.7,Clear,Meteostat Daily
+2026-05-12,Gia Lai,Central Highlands Vietnam,26.8,,0.0,11.5,1009.5,Clear,Meteostat Daily
+2026-05-13,Gia Lai,Central Highlands Vietnam,25.9,,0.1,10.4,1009.2,Light Rain,Meteostat Daily
+2026-05-14,Gia Lai,Central Highlands Vietnam,24.8,,1.4,12.2,1009.6,Light Rain,Meteostat Daily
+2026-05-15,Gia Lai,Central Highlands Vietnam,25.0,,4.2,9.1,1009.3,Light Rain,Meteostat Daily
+2026-05-16,Gia Lai,Central Highlands Vietnam,24.0,,3.1,9.2,1009.5,Light Rain,Meteostat Daily
+2026-05-17,Gia Lai,Central Highlands Vietnam,23.9,,12.7,9.2,1009.4,Rain,Meteostat Daily
+2026-05-18,Gia Lai,Central Highlands Vietnam,23.3,,7.2,7.5,1009.3,Rain,Meteostat Daily
+2026-05-19,Gia Lai,Central Highlands Vietnam,23.2,,10.1,9.3,1009.0,Rain,Meteostat Daily
+2026-05-20,Gia Lai,Central Highlands Vietnam,23.7,,9.5,11.1,1009.1,Rain,Meteostat Daily
+2026-05-21,Gia Lai,Central Highlands Vietnam,24.1,,5.1,8.6,1011.4,Rain,Meteostat Daily
+2026-05-22,Gia Lai,Central Highlands Vietnam,25.2,,0.0,9.3,1012.3,Clear,Meteostat Daily
+2026-05-23,Gia Lai,Central Highlands Vietnam,24.3,,3.1,11.3,1012.8,Light Rain,Meteostat Daily
+2026-05-24,Gia Lai,Central Highlands Vietnam,24.9,,2.0,8.5,1012.7,Light Rain,Meteostat Daily
+2026-05-25,Gia Lai,Central Highlands Vietnam,25.2,,1.8,10.4,1011.9,Light Rain,Meteostat Daily
+2026-05-26,Gia Lai,Central Highlands Vietnam,24.9,,5.0,12.6,1011.2,Light Rain,Meteostat Daily
+2026-05-27,Gia Lai,Central Highlands Vietnam,24.3,,7.9,10.4,1011.2,Rain,Meteostat Daily
+2026-05-28,Gia Lai,Central Highlands Vietnam,23.8,,4.0,8.5,1011.4,Light Rain,Meteostat Daily
+2026-05-29,Gia Lai,Central Highlands Vietnam,24.6,,2.8,8.1,1010.8,Light Rain,Meteostat Daily
+2026-01-01,Huế,Central Vietnam,22.2,,0.0,6.0,1014.2,Clear,Meteostat Daily
+2026-01-02,Huế,Central Vietnam,22.2,,7.5,17.7,1017.7,Rain,Meteostat Daily
+2026-01-03,Huế,Central Vietnam,22.2,,9.7,19.7,1018.7,Rain,Meteostat Daily
+2026-01-04,Huế,Central Vietnam,21.0,,0.2,6.7,1017.9,Light Rain,Meteostat Daily
+2026-01-05,Huế,Central Vietnam,22.2,,0.9,8.4,1018.3,Light Rain,Meteostat Daily
+2026-01-06,Huế,Central Vietnam,20.2,,5.5,9.1,1020.4,Rain,Meteostat Daily
+2026-01-07,Huế,Central Vietnam,17.1,,27.1,13.3,1022.8,Heavy Rain,Meteostat Daily
+2026-01-08,Huế,Central Vietnam,17.0,,8.8,11.1,1023.0,Rain,Meteostat Daily
+2026-01-09,Huế,Central Vietnam,17.9,,0.0,6.3,1020.8,Clear,Meteostat Daily
+2026-01-10,Huế,Central Vietnam,18.4,,0.0,6.6,1019.0,Clear,Meteostat Daily
+2026-01-11,Huế,Central Vietnam,18.6,,0.0,6.5,1021.1,Clear,Meteostat Daily
+2026-01-12,Huế,Central Vietnam,19.5,,0.0,7.9,1019.3,Clear,Meteostat Daily
+2026-01-13,Huế,Central Vietnam,20.9,,0.0,6.1,1018.2,Clear,Meteostat Daily
+2026-01-14,Huế,Central Vietnam,22.0,,0.0,5.5,1015.4,Clear,Meteostat Daily
+2026-01-15,Huế,Central Vietnam,22.4,,0.0,8.8,1014.9,Clear,Meteostat Daily
+2026-01-16,Huế,Central Vietnam,22.5,,0.0,7.9,1012.4,Clear,Meteostat Daily
+2026-01-17,Huế,Central Vietnam,21.9,,0.0,7.8,1011.3,Clear,Meteostat Daily
+2026-01-18,Huế,Central Vietnam,22.4,,0.0,7.4,1011.1,Clear,Meteostat Daily
+2026-01-19,Huế,Central Vietnam,22.8,,0.0,8.0,1011.6,Clear,Meteostat Daily
+2026-01-20,Huế,Central Vietnam,22.7,,0.0,10.7,1013.5,Clear,Meteostat Daily
+2026-01-21,Huế,Central Vietnam,22.0,,0.2,11.8,1016.5,Light Rain,Meteostat Daily
+2026-01-22,Huế,Central Vietnam,21.6,,1.8,10.4,1019.0,Light Rain,Meteostat Daily
+2026-01-23,Huế,Central Vietnam,20.7,,6.3,16.8,1020.3,Rain,Meteostat Daily
+2026-01-24,Huế,Central Vietnam,20.3,,0.6,7.9,1019.5,Light Rain,Meteostat Daily
+2026-01-25,Huế,Central Vietnam,22.0,,0.0,10.8,1016.8,Clear,Meteostat Daily
+2026-01-26,Huế,Central Vietnam,22.4,,0.0,8.4,1017.6,Clear,Meteostat Daily
+2026-01-27,Huế,Central Vietnam,20.8,,0.2,6.2,1018.5,Light Rain,Meteostat Daily
+2026-01-28,Huế,Central Vietnam,21.8,,1.5,7.3,1018.1,Light Rain,Meteostat Daily
+2026-01-29,Huế,Central Vietnam,22.4,,0.0,10.2,1016.5,Clear,Meteostat Daily
+2026-01-30,Huế,Central Vietnam,22.2,,0.0,7.0,1016.8,Clear,Meteostat Daily
+2026-01-31,Huế,Central Vietnam,22.4,,0.3,6.0,1018.5,Light Rain,Meteostat Daily
+2026-02-01,Huế,Central Vietnam,21.0,,7.6,6.2,1019.5,Rain,Meteostat Daily
+2026-02-02,Huế,Central Vietnam,21.2,,6.5,10.5,1020.0,Rain,Meteostat Daily
+2026-02-03,Huế,Central Vietnam,21.0,,3.7,8.4,1020.6,Light Rain,Meteostat Daily
+2026-02-04,Huế,Central Vietnam,21.7,,0.8,8.2,1017.4,Light Rain,Meteostat Daily
+2026-02-05,Huế,Central Vietnam,23.1,,0.0,7.4,1014.1,Clear,Meteostat Daily
+2026-02-06,Huế,Central Vietnam,23.0,,0.0,8.3,1013.0,Clear,Meteostat Daily
+2026-02-07,Huế,Central Vietnam,24.0,,0.0,12.2,1014.7,Clear,Meteostat Daily
+2026-02-08,Huế,Central Vietnam,23.4,,4.3,18.9,1017.6,Light Rain,Meteostat Daily
+2026-02-09,Huế,Central Vietnam,22.7,,5.3,19.5,1017.4,Rain,Meteostat Daily
+2026-02-10,Huế,Central Vietnam,22.1,,0.2,15.1,1016.9,Light Rain,Meteostat Daily
+2026-02-11,Huế,Central Vietnam,22.3,,0.4,19.9,1017.6,Light Rain,Meteostat Daily
+2026-02-14,Huế,Central Vietnam,23.0,,0.0,5.6,1014.2,Clear,Meteostat Daily
+2026-02-15,Huế,Central Vietnam,23.2,,0.0,6.1,1013.2,Clear,Meteostat Daily
+2026-02-16,Huế,Central Vietnam,24.0,,0.0,9.7,1012.8,Clear,Meteostat Daily
+2026-02-17,Huế,Central Vietnam,24.5,,0.0,12.6,1014.5,Clear,Meteostat Daily
+2026-02-18,Huế,Central Vietnam,24.2,,2.5,16.4,1016.8,Light Rain,Meteostat Daily
+2026-02-19,Huế,Central Vietnam,24.0,,1.8,14.8,1018.5,Light Rain,Meteostat Daily
+2026-02-20,Huế,Central Vietnam,23.6,,0.4,10.0,1017.6,Light Rain,Meteostat Daily
+2026-02-21,Huế,Central Vietnam,23.3,,0.0,6.8,1010.4,Clear,Meteostat Daily
+2026-02-22,Huế,Central Vietnam,25.0,,0.0,6.9,1008.0,Clear,Meteostat Daily
+2026-02-23,Huế,Central Vietnam,25.3,,0.0,5.7,1009.1,Clear,Meteostat Daily
+2026-02-24,Huế,Central Vietnam,25.2,,0.0,4.4,1010.5,Clear,Meteostat Daily
+2026-02-25,Huế,Central Vietnam,24.6,,0.0,4.5,1011.6,Clear,Meteostat Daily
+2026-02-26,Huế,Central Vietnam,24.9,,0.0,3.8,1009.3,Clear,Meteostat Daily
+2026-02-27,Huế,Central Vietnam,25.0,,1.6,3.0,1007.3,Light Rain,Meteostat Daily
+2026-02-28,Huế,Central Vietnam,26.2,,0.0,3.5,1006.4,Clear,Meteostat Daily
+2026-03-01,Huế,Central Vietnam,27.6,,0.0,5.2,1006.0,Clear,Meteostat Daily
+2026-03-02,Huế,Central Vietnam,28.8,,0.0,7.0,1007.1,Clear,Meteostat Daily
+2026-03-03,Huế,Central Vietnam,26.6,,7.5,7.3,1008.8,Rain,Meteostat Daily
+2026-03-04,Huế,Central Vietnam,22.3,,86.1,17.9,1013.3,Heavy Rain,Meteostat Daily
+2026-03-05,Huế,Central Vietnam,21.5,,46.6,10.1,1014.1,Heavy Rain,Meteostat Daily
+2026-03-06,Huế,Central Vietnam,22.9,,53.6,8.2,1014.7,Heavy Rain,Meteostat Daily
+2026-03-07,Huế,Central Vietnam,24.1,,2.2,13.5,1015.6,Light Rain,Meteostat Daily
+2026-03-08,Huế,Central Vietnam,23.6,,0.8,11.2,1015.7,Light Rain,Meteostat Daily
+2026-03-09,Huế,Central Vietnam,24.7,,16.3,14.0,1017.0,Rain,Meteostat Daily
+2026-03-10,Huế,Central Vietnam,21.9,,10.2,15.5,1018.8,Rain,Meteostat Daily
+2026-03-11,Huế,Central Vietnam,20.0,,4.3,10.5,1017.3,Light Rain,Meteostat Daily
+2026-03-12,Huế,Central Vietnam,20.5,,6.4,10.2,1016.2,Rain,Meteostat Daily
+2026-03-13,Huế,Central Vietnam,21.5,,8.0,11.0,1016.9,Rain,Meteostat Daily
+2026-03-14,Huế,Central Vietnam,23.6,,19.4,16.8,1017.9,Rain,Meteostat Daily
+2026-03-15,Huế,Central Vietnam,23.2,,0.2,10.2,1017.6,Light Rain,Meteostat Daily
+2026-03-16,Huế,Central Vietnam,23.1,,0.2,9.0,1015.3,Light Rain,Meteostat Daily
+2026-03-17,Huế,Central Vietnam,23.7,,0.0,9.9,1013.5,Clear,Meteostat Daily
+2026-03-18,Huế,Central Vietnam,24.0,,0.0,7.9,1013.1,Clear,Meteostat Daily
+2026-03-19,Huế,Central Vietnam,24.5,,0.0,7.8,1012.2,Clear,Meteostat Daily
+2026-03-20,Huế,Central Vietnam,25.1,,0.0,9.0,1011.1,Clear,Meteostat Daily
+2026-03-21,Huế,Central Vietnam,25.5,,0.0,8.8,1012.9,Clear,Meteostat Daily
+2026-03-22,Huế,Central Vietnam,25.0,,0.0,8.0,1012.0,Clear,Meteostat Daily
+2026-03-23,Huế,Central Vietnam,25.5,,0.0,7.9,1011.0,Clear,Meteostat Daily
+2026-03-24,Huế,Central Vietnam,25.5,,0.0,7.5,1009.8,Clear,Meteostat Daily
+2026-03-25,Huế,Central Vietnam,25.2,,0.0,8.8,1010.7,Clear,Meteostat Daily
+2026-03-26,Huế,Central Vietnam,25.4,,0.0,6.2,1009.3,Clear,Meteostat Daily
+2026-03-27,Huế,Central Vietnam,27.3,,0.0,5.8,1007.5,Clear,Meteostat Daily
+2026-03-28,Huế,Central Vietnam,25.8,,0.0,5.6,1008.0,Clear,Meteostat Daily
+2026-03-29,Huế,Central Vietnam,26.5,,0.0,6.6,1008.3,Clear,Meteostat Daily
+2026-03-30,Huế,Central Vietnam,28.4,,0.0,5.9,1007.7,Clear,Meteostat Daily
+2026-03-31,Huế,Central Vietnam,29.8,,0.0,3.6,1007.5,Clear,Meteostat Daily
+2026-04-01,Huế,Central Vietnam,27.9,,0.0,4.8,1009.3,Clear,Meteostat Daily
+2026-04-02,Huế,Central Vietnam,28.0,,0.0,3.2,1009.6,Clear,Meteostat Daily
+2026-04-03,Huế,Central Vietnam,29.7,,0.0,3.5,1006.4,Clear,Meteostat Daily
+2026-04-04,Huế,Central Vietnam,31.4,,0.0,4.0,1004.7,Clear,Meteostat Daily
+2026-04-05,Huế,Central Vietnam,30.5,,0.0,3.6,1004.5,Clear,Meteostat Daily
+2026-04-06,Huế,Central Vietnam,32.1,,0.0,4.1,1005.0,Clear,Meteostat Daily
+2026-04-07,Huế,Central Vietnam,32.0,,0.0,3.9,1005.8,Clear,Meteostat Daily
+2026-04-08,Huế,Central Vietnam,31.8,,0.0,3.8,1006.9,Clear,Meteostat Daily
+2026-04-09,Huế,Central Vietnam,30.7,,0.0,4.3,1007.2,Clear,Meteostat Daily
+2026-04-10,Huế,Central Vietnam,31.3,,0.0,4.8,1007.0,Clear,Meteostat Daily
+2026-04-11,Huế,Central Vietnam,32.0,,0.0,4.0,1005.8,Clear,Meteostat Daily
+2026-04-12,Huế,Central Vietnam,32.3,,0.0,5.0,1005.0,Clear,Meteostat Daily
+2026-04-13,Huế,Central Vietnam,31.0,,0.0,3.9,1006.5,Clear,Meteostat Daily
+2026-04-14,Huế,Central Vietnam,31.2,,0.0,3.1,1006.7,Clear,Meteostat Daily
+2026-04-15,Huế,Central Vietnam,30.0,,0.0,3.2,1005.5,Clear,Meteostat Daily
+2026-04-16,Huế,Central Vietnam,29.0,,0.0,2.8,1006.5,Clear,Meteostat Daily
+2026-04-17,Huế,Central Vietnam,27.7,,0.2,4.5,1008.0,Light Rain,Meteostat Daily
+2026-04-18,Huế,Central Vietnam,27.5,,0.4,4.5,1009.3,Light Rain,Meteostat Daily
+2026-04-19,Huế,Central Vietnam,27.1,,0.0,3.4,1009.1,Clear,Meteostat Daily
+2026-04-20,Huế,Central Vietnam,27.6,,0.0,4.0,1008.5,Clear,Meteostat Daily
+2026-04-21,Huế,Central Vietnam,28.3,,0.0,3.5,1007.0,Clear,Meteostat Daily
+2026-04-22,Huế,Central Vietnam,29.9,,0.0,3.8,1005.8,Clear,Meteostat Daily
+2026-04-23,Huế,Central Vietnam,29.9,,0.1,4.8,1005.6,Light Rain,Meteostat Daily
+2026-04-24,Huế,Central Vietnam,26.4,,6.8,5.0,1010.0,Rain,Meteostat Daily
+2026-04-25,Huế,Central Vietnam,26.6,,2.8,4.2,1012.6,Light Rain,Meteostat Daily
+2026-04-26,Huế,Central Vietnam,27.1,,0.0,4.1,1011.0,Clear,Meteostat Daily
+2026-04-27,Huế,Central Vietnam,28.0,,0.2,3.7,1008.4,Light Rain,Meteostat Daily
+2026-04-28,Huế,Central Vietnam,27.9,,1.3,8.1,1007.6,Light Rain,Meteostat Daily
+2026-04-29,Huế,Central Vietnam,26.8,,3.1,7.3,1009.6,Light Rain,Meteostat Daily
+2026-04-30,Huế,Central Vietnam,25.6,,2.1,9.1,1013.8,Light Rain,Meteostat Daily
+2026-05-01,Huế,Central Vietnam,25.9,,0.0,14.7,1011.4,Clear,Meteostat Daily
+2026-05-02,Huế,Central Vietnam,27.6,,0.4,3.5,1009.0,Light Rain,Meteostat Daily
+2026-05-03,Huế,Central Vietnam,28.6,,0.0,8.8,1008.6,Clear,Meteostat Daily
+2026-05-04,Huế,Central Vietnam,27.5,,13.0,4.9,1012.1,Rain,Meteostat Daily
+2026-05-05,Huế,Central Vietnam,25.2,,3.3,4.6,1011.9,Light Rain,Meteostat Daily
+2026-05-06,Huế,Central Vietnam,27.2,,0.0,3.8,1009.2,Clear,Meteostat Daily
+2026-05-07,Huế,Central Vietnam,28.8,,0.0,3.8,1007.8,Clear,Meteostat Daily
+2026-05-08,Huế,Central Vietnam,28.5,,0.0,4.5,1010.2,Clear,Meteostat Daily
+2026-05-09,Huế,Central Vietnam,28.0,,0.2,3.8,1011.6,Light Rain,Meteostat Daily
+2026-05-10,Huế,Central Vietnam,27.4,,0.7,3.1,1011.7,Light Rain,Meteostat Daily
+2026-05-11,Huế,Central Vietnam,28.5,,0.2,4.8,1010.7,Light Rain,Meteostat Daily
+2026-05-12,Huế,Central Vietnam,29.3,,0.0,4.2,1007.6,Clear,Meteostat Daily
+2026-05-13,Huế,Central Vietnam,30.4,,0.3,4.9,1005.2,Light Rain,Meteostat Daily
+2026-05-14,Huế,Central Vietnam,30.3,,3.0,4.5,1004.4,Light Rain,Meteostat Daily
+2026-05-15,Huế,Central Vietnam,31.6,,2.2,5.2,1004.1,Light Rain,Meteostat Daily
+2026-05-16,Huế,Central Vietnam,30.1,,0.6,4.7,1004.4,Light Rain,Meteostat Daily
+2026-05-17,Huế,Central Vietnam,28.3,,13.6,4.5,1005.0,Rain,Meteostat Daily
+2026-05-18,Huế,Central Vietnam,28.6,,6.1,4.4,1005.0,Rain,Meteostat Daily
+2026-05-19,Huế,Central Vietnam,29.3,,6.1,3.3,1004.2,Rain,Meteostat Daily
+2026-05-20,Huế,Central Vietnam,29.7,,6.6,3.5,1004.0,Rain,Meteostat Daily
+2026-05-21,Huế,Central Vietnam,30.5,,5.3,4.1,1006.5,Rain,Meteostat Daily
+2026-05-22,Huế,Central Vietnam,30.2,,1.1,4.1,1008.0,Light Rain,Meteostat Daily
+2026-05-23,Huế,Central Vietnam,31.2,,0.5,5.4,1007.9,Light Rain,Meteostat Daily
+2026-05-24,Huế,Central Vietnam,31.8,,0.0,4.3,1007.8,Clear,Meteostat Daily
+2026-05-25,Huế,Central Vietnam,32.5,,0.5,4.9,1006.5,Light Rain,Meteostat Daily
+2026-05-26,Huế,Central Vietnam,32.6,,1.6,4.6,1005.2,Light Rain,Meteostat Daily
+2026-05-27,Huế,Central Vietnam,32.8,,0.4,7.4,1006.3,Light Rain,Meteostat Daily
+2026-05-28,Huế,Central Vietnam,31.8,,0.8,12.7,1007.5,Light Rain,Meteostat Daily
+2026-05-29,Huế,Central Vietnam,30.7,,1.7,14.5,1007.8,Light Rain,Meteostat Daily
+2026-01-01,Khánh Hòa,South Central Coast,23.3,,0.0,28.4,1012.3,Clear,Meteostat Daily
+2026-01-02,Khánh Hòa,South Central Coast,23.9,,0.0,38.0,1015.1,Clear,Meteostat Daily
+2026-01-03,Khánh Hòa,South Central Coast,23.5,,0.0,38.5,1016.0,Clear,Meteostat Daily
+2026-01-04,Khánh Hòa,South Central Coast,23.8,,0.0,35.9,1015.0,Clear,Meteostat Daily
+2026-01-05,Khánh Hòa,South Central Coast,24.4,,0.0,40.4,1015.1,Clear,Meteostat Daily
+2026-01-06,Khánh Hòa,South Central Coast,24.0,,0.8,45.3,1017.0,Light Rain,Meteostat Daily
+2026-01-07,Khánh Hòa,South Central Coast,23.3,,0.2,47.0,1018.2,Light Rain,Meteostat Daily
+2026-01-08,Khánh Hòa,South Central Coast,22.3,,0.7,48.9,1018.5,Light Rain,Meteostat Daily
+2026-01-09,Khánh Hòa,South Central Coast,21.8,,0.0,36.9,1017.2,Clear,Meteostat Daily
+2026-01-10,Khánh Hòa,South Central Coast,22.1,,0.0,32.3,1016.0,Clear,Meteostat Daily
+2026-01-11,Khánh Hòa,South Central Coast,22.7,,0.0,37.7,1017.4,Clear,Meteostat Daily
+2026-01-12,Khánh Hòa,South Central Coast,22.9,,0.0,33.0,1016.9,Clear,Meteostat Daily
+2026-01-13,Khánh Hòa,South Central Coast,23.2,,0.0,33.8,1015.9,Clear,Meteostat Daily
+2026-01-14,Khánh Hòa,South Central Coast,23.1,,0.0,28.2,1014.4,Clear,Meteostat Daily
+2026-01-15,Khánh Hòa,South Central Coast,23.5,,0.0,29.7,1013.7,Clear,Meteostat Daily
+2026-01-16,Khánh Hòa,South Central Coast,22.9,,0.0,23.7,1012.4,Clear,Meteostat Daily
+2026-01-17,Khánh Hòa,South Central Coast,22.7,,0.0,22.5,1010.8,Clear,Meteostat Daily
+2026-01-18,Khánh Hòa,South Central Coast,23.0,,0.0,27.7,1010.1,Clear,Meteostat Daily
+2026-01-19,Khánh Hòa,South Central Coast,23.2,,0.8,24.6,1011.6,Light Rain,Meteostat Daily
+2026-01-20,Khánh Hòa,South Central Coast,23.3,,0.0,27.1,1012.8,Clear,Meteostat Daily
+2026-01-21,Khánh Hòa,South Central Coast,23.4,,0.0,32.9,1014.6,Clear,Meteostat Daily
+2026-01-22,Khánh Hòa,South Central Coast,23.6,,0.8,37.4,1016.2,Light Rain,Meteostat Daily
+2026-01-23,Khánh Hòa,South Central Coast,23.6,,2.4,37.6,1017.9,Light Rain,Meteostat Daily
+2026-01-24,Khánh Hòa,South Central Coast,23.5,,0.3,35.4,1017.6,Light Rain,Meteostat Daily
+2026-01-25,Khánh Hòa,South Central Coast,23.0,,0.0,28.2,1016.5,Clear,Meteostat Daily
+2026-01-26,Khánh Hòa,South Central Coast,23.4,,0.0,28.8,1016.5,Clear,Meteostat Daily
+2026-01-27,Khánh Hòa,South Central Coast,23.6,,0.0,29.2,1016.5,Clear,Meteostat Daily
+2026-01-28,Khánh Hòa,South Central Coast,23.7,,0.3,32.7,1016.4,Light Rain,Meteostat Daily
+2026-01-29,Khánh Hòa,South Central Coast,23.8,,0.0,29.7,1016.0,Clear,Meteostat Daily
+2026-01-30,Khánh Hòa,South Central Coast,23.4,,0.0,22.1,1016.4,Clear,Meteostat Daily
+2026-01-31,Khánh Hòa,South Central Coast,23.3,,0.0,27.1,1016.5,Clear,Meteostat Daily
+2026-02-01,Khánh Hòa,South Central Coast,23.6,,1.7,33.8,1016.7,Light Rain,Meteostat Daily
+2026-02-02,Khánh Hòa,South Central Coast,24.0,,0.6,35.5,1016.8,Light Rain,Meteostat Daily
+2026-02-03,Khánh Hòa,South Central Coast,24.1,,1.9,39.8,1016.8,Light Rain,Meteostat Daily
+2026-02-04,Khánh Hòa,South Central Coast,24.5,,0.1,33.2,1015.5,Light Rain,Meteostat Daily
+2026-02-05,Khánh Hòa,South Central Coast,23.5,,0.0,18.4,1014.4,Clear,Meteostat Daily
+2026-02-06,Khánh Hòa,South Central Coast,23.1,,0.0,13.0,1013.1,Clear,Meteostat Daily
+2026-02-07,Khánh Hòa,South Central Coast,24.2,,0.0,24.1,1013.4,Clear,Meteostat Daily
+2026-02-08,Khánh Hòa,South Central Coast,24.1,,0.6,33.4,1015.0,Light Rain,Meteostat Daily
+2026-02-09,Khánh Hòa,South Central Coast,24.5,,0.0,36.0,1014.8,Clear,Meteostat Daily
+2026-02-10,Khánh Hòa,South Central Coast,23.6,,35.7,27.2,1014.9,Heavy Rain,Meteostat Daily
+2026-02-11,Khánh Hòa,South Central Coast,23.6,,37.3,29.3,1015.7,Heavy Rain,Meteostat Daily
+2026-02-15,Khánh Hòa,South Central Coast,24.4,,0.0,24.8,1012.2,Clear,Meteostat Daily
+2026-02-16,Khánh Hòa,South Central Coast,24.7,,0.1,22.8,1012.0,Light Rain,Meteostat Daily
+2026-02-17,Khánh Hòa,South Central Coast,25.1,,0.0,26.3,1012.8,Clear,Meteostat Daily
+2026-02-18,Khánh Hòa,South Central Coast,24.9,,2.7,35.9,1014.7,Light Rain,Meteostat Daily
+2026-02-19,Khánh Hòa,South Central Coast,24.8,,2.9,37.5,1016.0,Light Rain,Meteostat Daily
+2026-02-20,Khánh Hòa,South Central Coast,24.8,,0.3,37.2,1015.8,Light Rain,Meteostat Daily
+2026-02-21,Khánh Hòa,South Central Coast,24.2,,0.2,21.3,1011.8,Light Rain,Meteostat Daily
+2026-02-22,Khánh Hòa,South Central Coast,24.1,,0.0,15.4,1009.8,Clear,Meteostat Daily
+2026-02-23,Khánh Hòa,South Central Coast,24.9,,0.0,17.4,1010.3,Clear,Meteostat Daily
+2026-02-24,Khánh Hòa,South Central Coast,24.6,,0.0,16.8,1011.0,Clear,Meteostat Daily
+2026-02-25,Khánh Hòa,South Central Coast,25.0,,0.0,18.5,1011.2,Clear,Meteostat Daily
+2026-02-26,Khánh Hòa,South Central Coast,25.1,,5.0,13.6,1009.8,Light Rain,Meteostat Daily
+2026-02-27,Khánh Hòa,South Central Coast,25.4,,3.7,7.6,1008.5,Light Rain,Meteostat Daily
+2026-02-28,Khánh Hòa,South Central Coast,25.6,,0.0,10.1,1008.4,Clear,Meteostat Daily
+2026-03-01,Khánh Hòa,South Central Coast,26.0,,0.0,12.0,1008.7,Clear,Meteostat Daily
+2026-03-02,Khánh Hòa,South Central Coast,26.0,,0.0,11.2,1009.8,Clear,Meteostat Daily
+2026-03-03,Khánh Hòa,South Central Coast,26.5,,0.0,11.7,1010.0,Clear,Meteostat Daily
+2026-03-04,Khánh Hòa,South Central Coast,26.6,,0.1,14.5,1010.6,Light Rain,Meteostat Daily
+2026-03-05,Khánh Hòa,South Central Coast,26.1,,2.4,26.9,1010.9,Light Rain,Meteostat Daily
+2026-03-06,Khánh Hòa,South Central Coast,25.7,,2.1,33.0,1012.1,Light Rain,Meteostat Daily
+2026-03-07,Khánh Hòa,South Central Coast,25.7,,0.9,37.9,1013.3,Light Rain,Meteostat Daily
+2026-03-08,Khánh Hòa,South Central Coast,25.5,,0.5,35.5,1012.8,Light Rain,Meteostat Daily
+2026-03-09,Khánh Hòa,South Central Coast,25.8,,0.3,35.4,1013.6,Light Rain,Meteostat Daily
+2026-03-10,Khánh Hòa,South Central Coast,25.3,,0.6,39.5,1014.8,Light Rain,Meteostat Daily
+2026-03-11,Khánh Hòa,South Central Coast,25.4,,0.0,37.4,1013.8,Clear,Meteostat Daily
+2026-03-12,Khánh Hòa,South Central Coast,25.0,,0.7,36.6,1013.7,Light Rain,Meteostat Daily
+2026-03-13,Khánh Hòa,South Central Coast,25.1,,0.3,37.3,1014.0,Light Rain,Meteostat Daily
+2026-03-14,Khánh Hòa,South Central Coast,23.8,,13.5,31.9,1015.1,Rain,Meteostat Daily
+2026-03-15,Khánh Hòa,South Central Coast,24.4,,2.1,32.1,1015.2,Light Rain,Meteostat Daily
+2026-03-16,Khánh Hòa,South Central Coast,25.0,,0.8,26.8,1013.7,Light Rain,Meteostat Daily
+2026-03-17,Khánh Hòa,South Central Coast,25.0,,0.0,21.5,1013.2,Clear,Meteostat Daily
+2026-03-18,Khánh Hòa,South Central Coast,24.6,,0.0,13.6,1013.3,Clear,Meteostat Daily
+2026-03-19,Khánh Hòa,South Central Coast,24.9,,0.0,14.7,1012.9,Clear,Meteostat Daily
+2026-03-20,Khánh Hòa,South Central Coast,24.9,,0.0,12.7,1012.8,Clear,Meteostat Daily
+2026-03-21,Khánh Hòa,South Central Coast,25.1,,1.2,14.0,1013.2,Light Rain,Meteostat Daily
+2026-03-22,Khánh Hòa,South Central Coast,25.8,,0.0,16.3,1012.6,Clear,Meteostat Daily
+2026-03-23,Khánh Hòa,South Central Coast,25.6,,0.0,15.2,1012.1,Clear,Meteostat Daily
+2026-03-24,Khánh Hòa,South Central Coast,25.1,,0.0,11.5,1011.0,Clear,Meteostat Daily
+2026-03-25,Khánh Hòa,South Central Coast,25.4,,0.0,14.7,1011.1,Clear,Meteostat Daily
+2026-03-26,Khánh Hòa,South Central Coast,26.2,,0.5,12.5,1011.1,Light Rain,Meteostat Daily
+2026-03-27,Khánh Hòa,South Central Coast,26.4,,0.0,10.5,1010.2,Clear,Meteostat Daily
+2026-03-28,Khánh Hòa,South Central Coast,26.9,,0.0,9.4,1009.9,Clear,Meteostat Daily
+2026-03-29,Khánh Hòa,South Central Coast,27.5,,0.0,11.8,1010.3,Clear,Meteostat Daily
+2026-03-30,Khánh Hòa,South Central Coast,26.7,,0.0,11.7,1011.0,Clear,Meteostat Daily
+2026-03-31,Khánh Hòa,South Central Coast,26.6,,0.0,15.6,1010.8,Clear,Meteostat Daily
+2026-04-01,Khánh Hòa,South Central Coast,26.8,,0.0,13.8,1011.0,Clear,Meteostat Daily
+2026-04-02,Khánh Hòa,South Central Coast,27.0,,0.0,9.4,1011.9,Clear,Meteostat Daily
+2026-04-03,Khánh Hòa,South Central Coast,26.8,,0.0,17.9,1010.1,Clear,Meteostat Daily
+2026-04-04,Khánh Hòa,South Central Coast,27.3,,0.0,23.1,1007.8,Clear,Meteostat Daily
+2026-04-05,Khánh Hòa,South Central Coast,27.7,,0.0,26.9,1007.8,Clear,Meteostat Daily
+2026-04-06,Khánh Hòa,South Central Coast,27.9,,0.0,27.9,1008.8,Clear,Meteostat Daily
+2026-04-07,Khánh Hòa,South Central Coast,28.1,,0.0,24.2,1009.2,Clear,Meteostat Daily
+2026-04-08,Khánh Hòa,South Central Coast,28.1,,0.0,24.7,1010.0,Clear,Meteostat Daily
+2026-04-09,Khánh Hòa,South Central Coast,27.7,,0.0,24.5,1010.6,Clear,Meteostat Daily
+2026-04-10,Khánh Hòa,South Central Coast,27.7,,0.0,24.4,1010.2,Clear,Meteostat Daily
+2026-04-11,Khánh Hòa,South Central Coast,28.2,,0.0,28.6,1008.7,Clear,Meteostat Daily
+2026-04-12,Khánh Hòa,South Central Coast,28.4,,0.0,26.0,1008.2,Clear,Meteostat Daily
+2026-04-13,Khánh Hòa,South Central Coast,28.6,,0.0,28.0,1009.2,Clear,Meteostat Daily
+2026-04-14,Khánh Hòa,South Central Coast,28.2,,0.0,20.7,1009.3,Clear,Meteostat Daily
+2026-04-15,Khánh Hòa,South Central Coast,27.9,,0.0,20.3,1008.7,Clear,Meteostat Daily
+2026-04-16,Khánh Hòa,South Central Coast,28.2,,0.0,18.7,1009.3,Clear,Meteostat Daily
+2026-04-17,Khánh Hòa,South Central Coast,27.8,,0.0,13.5,1010.1,Clear,Meteostat Daily
+2026-04-18,Khánh Hòa,South Central Coast,27.7,,0.1,10.7,1010.4,Light Rain,Meteostat Daily
+2026-04-19,Khánh Hòa,South Central Coast,28.4,,0.0,9.8,1010.3,Clear,Meteostat Daily
+2026-04-20,Khánh Hòa,South Central Coast,27.9,,0.0,10.8,1010.4,Clear,Meteostat Daily
+2026-04-21,Khánh Hòa,South Central Coast,28.2,,0.0,12.2,1009.6,Clear,Meteostat Daily
+2026-04-22,Khánh Hòa,South Central Coast,28.3,,0.0,16.6,1009.0,Clear,Meteostat Daily
+2026-04-23,Khánh Hòa,South Central Coast,28.6,,0.0,22.9,1007.9,Clear,Meteostat Daily
+2026-04-24,Khánh Hòa,South Central Coast,29.0,,0.0,18.6,1009.1,Clear,Meteostat Daily
+2026-04-25,Khánh Hòa,South Central Coast,28.3,,2.7,13.8,1011.2,Light Rain,Meteostat Daily
+2026-04-26,Khánh Hòa,South Central Coast,28.3,,0.0,15.5,1010.8,Clear,Meteostat Daily
+2026-04-27,Khánh Hòa,South Central Coast,28.6,,0.0,9.4,1009.6,Clear,Meteostat Daily
+2026-04-28,Khánh Hòa,South Central Coast,28.8,,0.0,9.4,1009.5,Clear,Meteostat Daily
+2026-04-29,Khánh Hòa,South Central Coast,29.2,,0.0,11.4,1009.6,Clear,Meteostat Daily
+2026-04-30,Khánh Hòa,South Central Coast,28.5,,1.5,17.5,1011.1,Light Rain,Meteostat Daily
+2026-05-01,Khánh Hòa,South Central Coast,28.6,,0.7,20.7,1011.0,Light Rain,Meteostat Daily
+2026-05-02,Khánh Hòa,South Central Coast,28.3,,0.8,11.5,1009.9,Light Rain,Meteostat Daily
+2026-05-03,Khánh Hòa,South Central Coast,29.1,,0.0,9.8,1009.8,Clear,Meteostat Daily
+2026-05-04,Khánh Hòa,South Central Coast,29.2,,0.8,14.1,1010.8,Light Rain,Meteostat Daily
+2026-05-05,Khánh Hòa,South Central Coast,27.5,,6.1,17.4,1010.4,Rain,Meteostat Daily
+2026-05-06,Khánh Hòa,South Central Coast,28.6,,1.1,14.3,1009.5,Light Rain,Meteostat Daily
+2026-05-07,Khánh Hòa,South Central Coast,28.9,,0.4,11.5,1009.2,Light Rain,Meteostat Daily
+2026-05-08,Khánh Hòa,South Central Coast,29.1,,0.0,14.9,1009.8,Clear,Meteostat Daily
+2026-05-09,Khánh Hòa,South Central Coast,28.8,,3.0,21.6,1010.4,Light Rain,Meteostat Daily
+2026-05-10,Khánh Hòa,South Central Coast,28.8,,3.4,21.6,1010.3,Light Rain,Meteostat Daily
+2026-05-11,Khánh Hòa,South Central Coast,28.8,,1.4,17.6,1010.3,Light Rain,Meteostat Daily
+2026-05-12,Khánh Hòa,South Central Coast,29.4,,0.0,12.3,1008.4,Clear,Meteostat Daily
+2026-05-13,Khánh Hòa,South Central Coast,29.5,,0.0,16.7,1007.3,Clear,Meteostat Daily
+2026-05-14,Khánh Hòa,South Central Coast,30.2,,1.1,19.5,1006.8,Light Rain,Meteostat Daily
+2026-05-15,Khánh Hòa,South Central Coast,30.1,,9.1,15.4,1006.7,Rain,Meteostat Daily
+2026-05-16,Khánh Hòa,South Central Coast,29.6,,0.2,17.7,1006.9,Light Rain,Meteostat Daily
+2026-05-17,Khánh Hòa,South Central Coast,28.9,,7.3,17.8,1006.9,Rain,Meteostat Daily
+2026-05-18,Khánh Hòa,South Central Coast,29.8,,2.3,24.5,1006.6,Light Rain,Meteostat Daily
+2026-05-19,Khánh Hòa,South Central Coast,29.8,,0.7,24.7,1006.4,Light Rain,Meteostat Daily
+2026-05-20,Khánh Hòa,South Central Coast,29.8,,1.4,29.5,1006.6,Light Rain,Meteostat Daily
+2026-05-21,Khánh Hòa,South Central Coast,29.9,,1.1,25.4,1008.9,Light Rain,Meteostat Daily
+2026-05-22,Khánh Hòa,South Central Coast,29.9,,0.0,18.9,1010.0,Clear,Meteostat Daily
+2026-05-23,Khánh Hòa,South Central Coast,30.5,,0.0,18.1,1009.9,Clear,Meteostat Daily
+2026-05-24,Khánh Hòa,South Central Coast,31.0,,0.0,19.6,1009.9,Clear,Meteostat Daily
+2026-05-25,Khánh Hòa,South Central Coast,31.6,,0.0,19.0,1008.8,Clear,Meteostat Daily
+2026-05-26,Khánh Hòa,South Central Coast,31.3,,0.0,12.0,1008.0,Clear,Meteostat Daily
+2026-05-27,Khánh Hòa,South Central Coast,31.6,,0.2,11.8,1007.9,Light Rain,Meteostat Daily
+2026-05-28,Khánh Hòa,South Central Coast,30.5,,0.3,12.8,1008.5,Light Rain,Meteostat Daily
+2026-05-29,Khánh Hòa,South Central Coast,29.6,,0.4,10.2,1008.5,Light Rain,Meteostat Daily
+2026-01-01,Đà Nẵng,Central Vietnam,22.5,,0.0,5.0,1014.3,Clear,Meteostat Daily
+2026-01-02,Đà Nẵng,Central Vietnam,23.1,,9.4,11.4,1018.1,Rain,Meteostat Daily
+2026-01-03,Đà Nẵng,Central Vietnam,23.5,,12.9,14.5,1018.8,Rain,Meteostat Daily
+2026-01-04,Đà Nẵng,Central Vietnam,22.0,,1.5,6.1,1018.0,Light Rain,Meteostat Daily
+2026-01-05,Đà Nẵng,Central Vietnam,22.8,,1.6,6.6,1018.5,Light Rain,Meteostat Daily
+2026-01-06,Đà Nẵng,Central Vietnam,21.1,,2.9,6.4,1020.5,Light Rain,Meteostat Daily
+2026-01-07,Đà Nẵng,Central Vietnam,18.6,,6.4,8.9,1022.2,Rain,Meteostat Daily
+2026-01-08,Đà Nẵng,Central Vietnam,18.7,,5.0,8.6,1022.6,Light Rain,Meteostat Daily
+2026-01-09,Đà Nẵng,Central Vietnam,19.0,,0.0,6.8,1020.7,Clear,Meteostat Daily
+2026-01-10,Đà Nẵng,Central Vietnam,17.9,,0.0,3.3,1019.2,Clear,Meteostat Daily
+2026-01-11,Đà Nẵng,Central Vietnam,19.8,,0.0,8.8,1021.0,Clear,Meteostat Daily
+2026-01-12,Đà Nẵng,Central Vietnam,19.8,,0.0,7.6,1019.2,Clear,Meteostat Daily
+2026-01-13,Đà Nẵng,Central Vietnam,21.2,,0.0,6.2,1018.0,Clear,Meteostat Daily
+2026-01-14,Đà Nẵng,Central Vietnam,21.5,,0.0,3.3,1015.8,Clear,Meteostat Daily
+2026-01-15,Đà Nẵng,Central Vietnam,23.0,,0.0,4.9,1015.2,Clear,Meteostat Daily
+2026-01-16,Đà Nẵng,Central Vietnam,22.6,,0.0,6.0,1013.0,Clear,Meteostat Daily
+2026-01-17,Đà Nẵng,Central Vietnam,22.6,,0.0,5.5,1011.7,Clear,Meteostat Daily
+2026-01-18,Đà Nẵng,Central Vietnam,22.4,,0.0,5.0,1011.5,Clear,Meteostat Daily
+2026-01-19,Đà Nẵng,Central Vietnam,22.7,,0.0,5.6,1012.4,Clear,Meteostat Daily
+2026-01-20,Đà Nẵng,Central Vietnam,22.5,,0.3,6.2,1014.2,Light Rain,Meteostat Daily
+2026-01-21,Đà Nẵng,Central Vietnam,22.4,,2.7,6.2,1016.8,Light Rain,Meteostat Daily
+2026-01-22,Đà Nẵng,Central Vietnam,22.2,,3.3,8.5,1018.9,Light Rain,Meteostat Daily
+2026-01-23,Đà Nẵng,Central Vietnam,23.0,,4.8,14.0,1020.0,Light Rain,Meteostat Daily
+2026-01-24,Đà Nẵng,Central Vietnam,22.6,,2.6,6.0,1019.5,Light Rain,Meteostat Daily
+2026-01-25,Đà Nẵng,Central Vietnam,22.0,,0.0,5.8,1017.5,Clear,Meteostat Daily
+2026-01-26,Đà Nẵng,Central Vietnam,22.8,,0.4,5.7,1018.0,Light Rain,Meteostat Daily
+2026-01-27,Đà Nẵng,Central Vietnam,21.8,,0.4,3.7,1018.5,Light Rain,Meteostat Daily
+2026-01-28,Đà Nẵng,Central Vietnam,22.2,,0.9,4.9,1018.2,Light Rain,Meteostat Daily
+2026-01-29,Đà Nẵng,Central Vietnam,22.0,,0.1,5.2,1017.4,Light Rain,Meteostat Daily
+2026-01-30,Đà Nẵng,Central Vietnam,22.2,,0.0,6.1,1017.2,Clear,Meteostat Daily
+2026-01-31,Đà Nẵng,Central Vietnam,22.8,,0.0,10.6,1018.4,Clear,Meteostat Daily
+2026-02-01,Đà Nẵng,Central Vietnam,21.4,,5.5,5.8,1019.5,Rain,Meteostat Daily
+2026-02-02,Đà Nẵng,Central Vietnam,22.2,,13.7,8.5,1020.1,Rain,Meteostat Daily
+2026-02-03,Đà Nẵng,Central Vietnam,22.1,,6.6,7.2,1020.8,Rain,Meteostat Daily
+2026-02-04,Đà Nẵng,Central Vietnam,22.7,,3.3,4.8,1017.8,Light Rain,Meteostat Daily
+2026-02-05,Đà Nẵng,Central Vietnam,23.5,,0.0,7.7,1015.2,Clear,Meteostat Daily
+2026-02-06,Đà Nẵng,Central Vietnam,23.3,,0.0,7.0,1013.5,Clear,Meteostat Daily
+2026-02-07,Đà Nẵng,Central Vietnam,24.3,,0.0,5.9,1015.2,Clear,Meteostat Daily
+2026-02-08,Đà Nẵng,Central Vietnam,23.5,,0.0,11.0,1018.2,Clear,Meteostat Daily
+2026-02-09,Đà Nẵng,Central Vietnam,23.5,,55.3,13.9,1017.8,Heavy Rain,Meteostat Daily
+2026-02-10,Đà Nẵng,Central Vietnam,23.6,,0.0,4.4,1017.7,Clear,Meteostat Daily
+2026-02-11,Đà Nẵng,Central Vietnam,23.2,,0.0,3.8,1018.4,Clear,Meteostat Daily
+2026-02-12,Đà Nẵng,Central Vietnam,23.5,,0.0,2.8,1017.3,Clear,Meteostat Daily
+2026-02-13,Đà Nẵng,Central Vietnam,23.6,,0.0,3.6,1015.6,Clear,Meteostat Daily
+2026-02-14,Đà Nẵng,Central Vietnam,23.5,,0.0,3.4,1014.9,Clear,Meteostat Daily
+2026-02-15,Đà Nẵng,Central Vietnam,24.2,,0.0,4.3,1014.0,Clear,Meteostat Daily
+2026-02-16,Đà Nẵng,Central Vietnam,25.0,,0.0,6.9,1013.3,Clear,Meteostat Daily
+2026-02-17,Đà Nẵng,Central Vietnam,25.2,,0.0,8.2,1015.1,Clear,Meteostat Daily
+2026-02-18,Đà Nẵng,Central Vietnam,24.5,,0.0,14.0,1017.2,Clear,Meteostat Daily
+2026-02-19,Đà Nẵng,Central Vietnam,24.5,,0.0,12.2,1018.8,Clear,Meteostat Daily
+2026-02-20,Đà Nẵng,Central Vietnam,24.2,,0.0,9.8,1018.2,Clear,Meteostat Daily
+2026-02-21,Đà Nẵng,Central Vietnam,23.5,,0.0,8.0,1011.7,Clear,Meteostat Daily
+2026-02-22,Đà Nẵng,Central Vietnam,24.8,,0.0,10.1,1009.5,Clear,Meteostat Daily
+2026-02-23,Đà Nẵng,Central Vietnam,25.6,,0.0,7.6,1010.4,Clear,Meteostat Daily
+2026-02-24,Đà Nẵng,Central Vietnam,25.1,,0.0,5.7,1011.4,Clear,Meteostat Daily
+2026-02-25,Đà Nẵng,Central Vietnam,24.8,,0.0,4.1,1012.4,Clear,Meteostat Daily
+2026-02-26,Đà Nẵng,Central Vietnam,25.4,,0.0,4.4,1010.0,Clear,Meteostat Daily
+2026-02-27,Đà Nẵng,Central Vietnam,24.9,,0.0,3.5,1008.2,Clear,Meteostat Daily
+2026-02-28,Đà Nẵng,Central Vietnam,25.5,,0.0,4.0,1007.3,Clear,Meteostat Daily
+2026-03-01,Đà Nẵng,Central Vietnam,26.6,,0.0,6.5,1007.0,Clear,Meteostat Daily
+2026-03-02,Đà Nẵng,Central Vietnam,26.7,,0.0,7.5,1008.3,Clear,Meteostat Daily
+2026-03-03,Đà Nẵng,Central Vietnam,26.3,,0.0,7.5,1009.4,Clear,Meteostat Daily
+2026-03-04,Đà Nẵng,Central Vietnam,26.0,,0.0,9.0,1012.2,Clear,Meteostat Daily
+2026-03-05,Đà Nẵng,Central Vietnam,24.3,,6.4,10.2,1013.2,Rain,Meteostat Daily
+2026-03-06,Đà Nẵng,Central Vietnam,23.8,,40.5,7.4,1014.9,Heavy Rain,Meteostat Daily
+2026-03-07,Đà Nẵng,Central Vietnam,24.7,,0.0,9.1,1016.3,Clear,Meteostat Daily
+2026-03-08,Đà Nẵng,Central Vietnam,24.2,,0.0,8.8,1016.1,Clear,Meteostat Daily
+2026-03-09,Đà Nẵng,Central Vietnam,24.3,,4.6,12.1,1017.0,Light Rain,Meteostat Daily
+2026-03-10,Đà Nẵng,Central Vietnam,23.9,,1.2,14.8,1018.3,Light Rain,Meteostat Daily
+2026-03-11,Đà Nẵng,Central Vietnam,22.3,,0.0,5.7,1016.8,Clear,Meteostat Daily
+2026-03-12,Đà Nẵng,Central Vietnam,21.8,,0.0,5.0,1016.0,Clear,Meteostat Daily
+2026-03-13,Đà Nẵng,Central Vietnam,23.0,,8.5,9.4,1016.9,Rain,Meteostat Daily
+2026-03-14,Đà Nẵng,Central Vietnam,24.2,,18.4,10.6,1018.2,Rain,Meteostat Daily
+2026-03-15,Đà Nẵng,Central Vietnam,23.2,,0.0,6.4,1018.0,Clear,Meteostat Daily
+2026-03-16,Đà Nẵng,Central Vietnam,22.5,,0.0,3.1,1016.0,Clear,Meteostat Daily
+2026-03-17,Đà Nẵng,Central Vietnam,23.8,,0.0,6.2,1014.3,Clear,Meteostat Daily
+2026-03-18,Đà Nẵng,Central Vietnam,24.8,,0.0,7.5,1014.0,Clear,Meteostat Daily
+2026-03-19,Đà Nẵng,Central Vietnam,24.6,,0.0,6.2,1013.0,Clear,Meteostat Daily
+2026-03-20,Đà Nẵng,Central Vietnam,24.7,,0.0,8.9,1012.5,Clear,Meteostat Daily
+2026-03-21,Đà Nẵng,Central Vietnam,25.6,,0.0,8.5,1013.9,Clear,Meteostat Daily
+2026-03-22,Đà Nẵng,Central Vietnam,25.8,,0.0,10.4,1013.2,Clear,Meteostat Daily
+2026-03-23,Đà Nẵng,Central Vietnam,25.5,,0.0,9.1,1012.2,Clear,Meteostat Daily
+2026-03-24,Đà Nẵng,Central Vietnam,25.6,,0.0,7.3,1010.9,Clear,Meteostat Daily
+2026-03-25,Đà Nẵng,Central Vietnam,25.3,,0.0,7.9,1011.5,Clear,Meteostat Daily
+2026-03-26,Đà Nẵng,Central Vietnam,25.6,,0.0,8.5,1010.5,Clear,Meteostat Daily
+2026-03-27,Đà Nẵng,Central Vietnam,26.0,,0.0,8.2,1008.9,Clear,Meteostat Daily
+2026-03-28,Đà Nẵng,Central Vietnam,26.5,,0.0,6.9,1008.7,Clear,Meteostat Daily
+2026-03-29,Đà Nẵng,Central Vietnam,26.2,,0.0,7.2,1008.9,Clear,Meteostat Daily
+2026-03-30,Đà Nẵng,Central Vietnam,26.9,,0.0,8.1,1009.0,Clear,Meteostat Daily
+2026-03-31,Đà Nẵng,Central Vietnam,28.0,,0.0,4.0,1008.7,Clear,Meteostat Daily
+2026-04-01,Đà Nẵng,Central Vietnam,27.8,,0.0,5.6,1009.5,Clear,Meteostat Daily
+2026-04-02,Đà Nẵng,Central Vietnam,27.8,,0.0,4.2,1010.5,Clear,Meteostat Daily
+2026-04-03,Đà Nẵng,Central Vietnam,27.4,,0.0,4.4,1007.8,Clear,Meteostat Daily
+2026-04-04,Đà Nẵng,Central Vietnam,29.9,,0.0,3.5,1005.2,Clear,Meteostat Daily
+2026-04-05,Đà Nẵng,Central Vietnam,29.4,,0.0,3.4,1005.3,Clear,Meteostat Daily
+2026-04-06,Đà Nẵng,Central Vietnam,29.7,,0.0,3.7,1006.0,Clear,Meteostat Daily
+2026-04-07,Đà Nẵng,Central Vietnam,30.6,,0.0,3.5,1006.8,Clear,Meteostat Daily
+2026-04-08,Đà Nẵng,Central Vietnam,28.6,,0.0,4.9,1007.9,Clear,Meteostat Daily
+2026-04-09,Đà Nẵng,Central Vietnam,28.0,,0.0,4.6,1008.6,Clear,Meteostat Daily
+2026-04-10,Đà Nẵng,Central Vietnam,29.2,,0.0,3.5,1008.0,Clear,Meteostat Daily
+2026-04-11,Đà Nẵng,Central Vietnam,29.8,,0.0,4.9,1006.9,Clear,Meteostat Daily
+2026-04-12,Đà Nẵng,Central Vietnam,29.6,,0.0,4.1,1006.1,Clear,Meteostat Daily
+2026-04-13,Đà Nẵng,Central Vietnam,28.9,,0.0,4.2,1007.7,Clear,Meteostat Daily
+2026-04-14,Đà Nẵng,Central Vietnam,28.0,,0.0,4.3,1008.0,Clear,Meteostat Daily
+2026-04-15,Đà Nẵng,Central Vietnam,27.8,,0.0,4.6,1007.1,Clear,Meteostat Daily
+2026-04-16,Đà Nẵng,Central Vietnam,27.3,,0.0,4.3,1007.8,Clear,Meteostat Daily
+2026-04-17,Đà Nẵng,Central Vietnam,27.5,,0.0,5.0,1009.1,Clear,Meteostat Daily
+2026-04-18,Đà Nẵng,Central Vietnam,27.3,,0.0,6.5,1010.3,Clear,Meteostat Daily
+2026-04-19,Đà Nẵng,Central Vietnam,27.2,,0.0,4.8,1010.1,Clear,Meteostat Daily
+2026-04-20,Đà Nẵng,Central Vietnam,27.2,,0.0,4.9,1009.5,Clear,Meteostat Daily
+2026-04-21,Đà Nẵng,Central Vietnam,27.1,,0.0,5.1,1008.4,Clear,Meteostat Daily
+2026-04-22,Đà Nẵng,Central Vietnam,27.8,,0.0,4.2,1006.9,Clear,Meteostat Daily
+2026-04-23,Đà Nẵng,Central Vietnam,28.0,,0.0,4.5,1006.4,Clear,Meteostat Daily
+2026-04-24,Đà Nẵng,Central Vietnam,26.8,,0.0,7.2,1009.7,Clear,Meteostat Daily
+2026-04-25,Đà Nẵng,Central Vietnam,26.9,,0.0,6.0,1012.5,Clear,Meteostat Daily
+2026-04-26,Đà Nẵng,Central Vietnam,27.6,,0.0,4.2,1011.4,Clear,Meteostat Daily
+2026-04-27,Đà Nẵng,Central Vietnam,27.8,,0.0,4.5,1009.2,Clear,Meteostat Daily
+2026-04-28,Đà Nẵng,Central Vietnam,27.9,,0.0,4.0,1008.2,Clear,Meteostat Daily
+2026-04-29,Đà Nẵng,Central Vietnam,27.7,,2.3,5.4,1009.7,Light Rain,Meteostat Daily
+2026-04-30,Đà Nẵng,Central Vietnam,27.4,,0.0,8.2,1012.9,Clear,Meteostat Daily
+2026-05-01,Đà Nẵng,Central Vietnam,27.4,,0.0,4.3,1012.3,Clear,Meteostat Daily
+2026-05-02,Đà Nẵng,Central Vietnam,28.1,,0.0,4.0,1010.1,Clear,Meteostat Daily
+2026-05-03,Đà Nẵng,Central Vietnam,28.6,,6.6,4.1,1009.3,Rain,Meteostat Daily
+2026-05-04,Đà Nẵng,Central Vietnam,28.8,,2.4,4.2,1012.2,Light Rain,Meteostat Daily
+2026-05-05,Đà Nẵng,Central Vietnam,27.5,,0.0,8.5,1011.2,Clear,Meteostat Daily
+2026-05-06,Đà Nẵng,Central Vietnam,28.1,,0.0,4.5,1009.9,Clear,Meteostat Daily
+2026-05-07,Đà Nẵng,Central Vietnam,28.9,,0.0,4.4,1009.0,Clear,Meteostat Daily
+2026-05-08,Đà Nẵng,Central Vietnam,29.3,,0.0,3.8,1010.6,Clear,Meteostat Daily
+2026-05-09,Đà Nẵng,Central Vietnam,28.6,,0.0,4.0,1011.8,Clear,Meteostat Daily
+2026-05-10,Đà Nẵng,Central Vietnam,28.3,,0.0,4.2,1011.7,Clear,Meteostat Daily
+2026-05-11,Đà Nẵng,Central Vietnam,29.1,,0.0,3.3,1011.0,Clear,Meteostat Daily
+2026-05-12,Đà Nẵng,Central Vietnam,29.1,,0.0,4.8,1008.2,Clear,Meteostat Daily
+2026-05-13,Đà Nẵng,Central Vietnam,30.0,,0.0,4.4,1006.2,Clear,Meteostat Daily
+2026-05-14,Đà Nẵng,Central Vietnam,29.4,,3.3,4.5,1005.2,Light Rain,Meteostat Daily
+2026-05-15,Đà Nẵng,Central Vietnam,29.2,,12.9,4.5,1005.2,Rain,Meteostat Daily
+2026-05-16,Đà Nẵng,Central Vietnam,28.9,,0.9,3.9,1005.1,Light Rain,Meteostat Daily
+2026-05-17,Đà Nẵng,Central Vietnam,28.0,,6.5,4.0,1005.6,Rain,Meteostat Daily
+2026-05-18,Đà Nẵng,Central Vietnam,29.0,,8.2,3.7,1005.5,Rain,Meteostat Daily
+2026-05-19,Đà Nẵng,Central Vietnam,29.4,,9.1,4.8,1004.8,Rain,Meteostat Daily
+2026-05-20,Đà Nẵng,Central Vietnam,29.9,,0.4,4.2,1004.5,Light Rain,Meteostat Daily
+2026-05-21,Đà Nẵng,Central Vietnam,30.2,,7.7,4.4,1007.0,Rain,Meteostat Daily
+2026-05-22,Đà Nẵng,Central Vietnam,30.2,,0.0,3.8,1008.8,Clear,Meteostat Daily
+2026-05-23,Đà Nẵng,Central Vietnam,30.6,,0.0,3.2,1008.7,Clear,Meteostat Daily
+2026-05-24,Đà Nẵng,Central Vietnam,31.0,,0.0,4.2,1008.5,Clear,Meteostat Daily
+2026-05-25,Đà Nẵng,Central Vietnam,31.2,,0.0,4.9,1007.3,Clear,Meteostat Daily
+2026-05-26,Đà Nẵng,Central Vietnam,31.0,,0.0,4.1,1006.1,Clear,Meteostat Daily
+2026-05-27,Đà Nẵng,Central Vietnam,31.2,,0.0,4.3,1007.0,Clear,Meteostat Daily
+2026-05-28,Đà Nẵng,Central Vietnam,30.9,,0.0,5.2,1008.3,Clear,Meteostat Daily
+2026-05-29,Đà Nẵng,Central Vietnam,30.5,,0.0,4.4,1008.8,Clear,Meteostat Daily
+2026-05-30,Đà Nẵng,Central Vietnam,30.1,,0.0,4.0,1008.7,Clear,Meteostat Daily
+2026-05-31,Đà Nẵng,Central Vietnam,29.8,,0.0,4.1,1008.7,Clear,Meteostat Daily
+2026-06-01,Đà Nẵng,Central Vietnam,29.9,,0.0,4.2,1008.6,Clear,Meteostat Daily
