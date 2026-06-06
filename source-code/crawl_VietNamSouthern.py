@@ -1,10 +1,9 @@
 import requests
 import pandas as pd
-from datetime import datetime
 import calendar
 import time
 
-#Cấu hình Trạm và API Key
+# Cấu hình Trạm và API Key
 stations = {
     'Ho_Chi_Minh': 'VVTS',
     'Can_Tho': 'VVCT',
@@ -12,30 +11,25 @@ stations = {
 }
 API_KEY = "e1f10a1e78da46f5b10a1e78da96f525" 
 
-#Sinh danh sách 12 tháng lùi về trước
+# Sinh danh sách 12 tháng của năm 2025
 date_chunks = []
-today = datetime.now()
+target_year = 2025
 
-for i in range(12):
-    m = today.month - i
-    y = today.year
-    if m <= 0:
-        m += 12
-        y -= 1
-    last_day = calendar.monthrange(y, m)[1]
-    start_str = f"{y:04d}{m:02d}01"
-    end_str = f"{y:04d}{m:02d}{last_day}"
-    date_chunks.append((start_str, end_str, f"{m:02d}/{y}"))
+for m in range(1, 13):
+    last_day = calendar.monthrange(target_year, m)[1]
+    start_str = f"{target_year}{m:02d}01"
+    end_str = f"{target_year}{m:02d}{last_day}"
+    date_chunks.append((start_str, end_str, f"{m:02d}/{target_year}"))
 
 all_data = []
 
-#Danh sách toàn bộ các cột có thể có từ JSON của Wunderground
+# Danh sách toàn bộ các cột có thể có từ JSON của Wunderground
 all_possible_columns = [
     'valid_time_gmt', 'temp', 'dewPt', 'rh', 'wdir_cardinal', 
     'wspd', 'wgust', 'pressure', 'precip_total', 'uv_index', 'vis', 'wx_phrase'
 ]
 
-#Vòng lặp lấy dữ liệu
+# Vòng lặp lấy dữ liệu
 for city, code in stations.items():
     print(f"\nĐang xử lý trạm: {city}")
     
@@ -58,12 +52,13 @@ for city, code in stations.items():
                         if col not in df.columns:
                             df[col] = pd.NA
                     
-                    #TIỀN XỬ LÝ THỜI GIAN
+                    # TIỀN XỬ LÝ THỜI GIAN
                     df['Local_Time'] = pd.to_datetime(df['valid_time_gmt'], unit='s') + pd.Timedelta(hours=7)
                     df['Date'] = df['Local_Time'].dt.strftime('%Y-%m-%d')
                     
-                    #TÌM NHIỆT ĐỘ MIN/MAX CẢ NGÀY
+                    # TÌM NHIỆT ĐỘ MIN/MAX CẢ NGÀY
                     daily_min_max = df.groupby('Date')['temp'].agg(Min_Temp_C='min', Max_Temp_C='max').reset_index()
+                    
                     # LỌC LẤY DÒNG GẦN 12H TRƯA NHẤT
                     # Khung giờ từ 10:00 sáng đến 14:59 chiều
                     df_noon = df[(df['Local_Time'].dt.hour >= 10) & (df['Local_Time'].dt.hour <= 14)].copy()
@@ -74,7 +69,7 @@ for city, code in stations.items():
                     # Ưu tiên dòng gần 12h nhất, nếu trùng thì lấy dòng cập nhật sau cùng
                     df_noon = df_noon.sort_values(['Date', 'diff_to_12', 'Local_Time'])
                     
-                    #Giữ lại đúng 1 dòng đại diện cho mỗi ngày
+                    # Giữ lại đúng 1 dòng đại diện cho mỗi ngày
                     df_12h = df_noon.drop_duplicates(subset=['Date'], keep='first').copy()
                     
                     # GHÉP NỐI & LÀM SẠCH BẢNG
@@ -113,18 +108,18 @@ for city, code in stations.items():
             
         time.sleep(1.5) # Nghỉ 1.5 giây giữa các lần gọi API để tránh bị chặn
 
-#Gom dữ liệu và Xuất file
+# Gom dữ liệu và Xuất file
 if all_data:
     final_df = pd.concat(all_data, ignore_index=True)
     
     # Sắp xếp tổng thể theo Tỉnh và Ngày tăng dần
     final_df = final_df.sort_values(by=['Province', 'Date']).reset_index(drop=True)
     
-    file_name = 'Wunderground_12Months_AllAttributes.csv'
+    file_name = 'south_weather.csv'
     final_df.to_csv(file_name, index=False, encoding='utf-8-sig')
     
     print("\n" + "="*70)
-    print(f"Hoàn tất! Dataset siêu lớn với {len(final_df)} dòng và 16 cột.")
+    print(f"Hoàn tất! Dataset với {len(final_df)} dòng và 16 cột.")
     print(f"File lưu tại: '{file_name}'")
     
     # Hiển thị tóm tắt bộ dữ liệu
