@@ -2,14 +2,16 @@ import requests
 import pandas as pd
 import calendar
 import time
+import os
 
 # Cấu hình Trạm và API Key
 stations = {
-    'Ho_Chi_Minh': 'VVTS',
-    'Can_Tho': 'VVCT',
-    'Ca_Mau': 'VVCM'
+    'TP.HCM': 'VVTS',
+    'Cần Thơ': 'VVCT',
+    'Cà Mau': 'VVCM'
 }
-API_KEY = "e1f10a1e78da46f5b10a1e78da96f525" 
+API_KEY = os.getenv("WEATHER_API_KEY", "e1f10a1e78da46f5b10a1e78da96f525")
+region = "South"
 
 # Sinh danh sách 12 tháng của năm 2025
 date_chunks = []
@@ -23,105 +25,171 @@ for m in range(1, 13):
 
 all_data = []
 
-# Danh sách toàn bộ các cột có thể có từ JSON của Wunderground
-all_possible_columns = [
-    'valid_time_gmt', 'temp', 'dewPt', 'rh', 'wdir_cardinal', 
-    'wspd', 'wgust', 'pressure', 'precip_total', 'uv_index', 'vis', 'wx_phrase'
-]
+# Codemap theo Weather Company icon codes
+def map_weather_code(row):
+    phrase = str(row.get('wx_phrase', '')).lower()
+    icon = row.get('wx_icon')
+
+    if pd.notna(icon):
+        try:
+            icon = int(icon)
+        except:
+            icon = None
+    else:
+        icon = None
+
+    icon_map = {
+        0: 200,   # Tornado
+        4: 200,   # Thunderstorms
+        5: 610,   # Rain / Snow
+        6: 611,   # Rain / Sleet
+        7: 613,   # Wintry Mix
+        8: 300,   # Freezing Drizzle
+        9: 300,   # Drizzle
+        10: 511,  # Freezing Rain
+        11: 521,  # Showers
+        12: 500,  # Rain
+        13: 620,  # Flurries
+        14: 621,  # Snow Showers
+        15: 621,  # Blowing / Drifting Snow
+        16: 600,  # Snow
+        17: 906,  # Hail
+        18: 611,  # Sleet
+        19: 751,  # Dust / Sandstorm
+        20: 741,  # Foggy
+        21: 721,  # Haze
+        22: 711,  # Smoke
+        24: 781,  # Windy
+        25: 511,  # Frigid / Ice Crystals
+        26: 804,  # Cloudy
+        27: 803,  # Mostly Cloudy Night
+        28: 803,  # Mostly Cloudy Day
+        29: 802,  # Partly Cloudy Night
+        30: 802,  # Partly Cloudy Day
+        31: 800,  # Clear Night
+        32: 800,  # Sunny Day
+        33: 801,  # Fair / Mostly Clear Night
+        34: 801,  # Fair / Mostly Sunny Day
+        35: 906,  # Mixed Rain and Hail
+        36: 800,  # Hot
+        37: 200,  # Isolated Thunderstorms
+        38: 200,  # Scattered Thunderstorms
+        39: 521,  # Scattered Showers
+        40: 520,  # Heavy Rain
+        41: 621,  # Scattered Snow Showers
+        42: 622,  # Heavy Snow
+        43: 602,  # Blizzard
+        44: 999,  # Not Available
+        45: 521,  # Scattered Showers
+        46: 621,  # Scattered Snow Showers
+        47: 200,  # Scattered Thunderstorms
+    }
+
+    if icon in icon_map:
+        return icon_map[icon]
+
+    if 'thunder' in phrase or 'storm' in phrase:
+        return 200
+    if 'drizzle' in phrase:
+        return 300
+    if 'freezing rain' in phrase:
+        return 511
+    if 'rain' in phrase or 'shower' in phrase:
+        return 500
+    if 'snow' in phrase:
+        return 600
+    if 'sleet' in phrase:
+        return 611
+    if 'hail' in phrase:
+        return 906
+    if 'fog' in phrase:
+        return 741
+    if 'haze' in phrase:
+        return 721
+    if 'smoke' in phrase:
+        return 711
+    if 'wind' in phrase:
+        return 781
+    if 'cloud' in phrase or 'overcast' in phrase:
+        return 804
+    if 'clear' in phrase or 'sunny' in phrase:
+        return 800
+
+    return 999
 
 # Vòng lặp lấy dữ liệu
-for city, code in stations.items():
-    print(f"\nĐang xử lý trạm: {city}")
-    
+for province, code in stations.items():
+    print(f"\nĐang xử lý trạm: {province}")
+
     for start_date, end_date, month_label in date_chunks:
         print(f"Lấy tháng {month_label}...", end=" ")
-        
+
         url = f"https://api.weather.com/v1/location/{code}:9:VN/observations/historical.json?apiKey={API_KEY}&units=m&startDate={start_date}&endDate={end_date}"
-        
+
         try:
             response = requests.get(url, timeout=15)
-            
+
             if response.status_code == 200:
                 records = response.json().get('observations', [])
-                
+
                 if records:
                     df = pd.DataFrame(records)
-                    
-                    # Đảm bảo DataFrame có đủ tất cả các cột, nếu thiếu thì điền NaN
-                    for col in all_possible_columns:
+
+                    for col in ['valid_time_gmt', 'temp', 'rh', 'wspd', 'pressure', 'precip_total', 'wx_phrase', 'wx_icon']:
                         if col not in df.columns:
                             df[col] = pd.NA
-                    
-                    # TIỀN XỬ LÝ THỜI GIAN
+
                     df['Local_Time'] = pd.to_datetime(df['valid_time_gmt'], unit='s') + pd.Timedelta(hours=7)
-                    df['Date'] = df['Local_Time'].dt.strftime('%Y-%m-%d')
-                    
-                    # TÌM NHIỆT ĐỘ MIN/MAX CẢ NGÀY
-                    daily_min_max = df.groupby('Date')['temp'].agg(Min_Temp_C='min', Max_Temp_C='max').reset_index()
-                    
-                    # LỌC LẤY DÒNG GẦN 12H TRƯA NHẤT
-                    # Khung giờ từ 10:00 sáng đến 14:59 chiều
-                    df_noon = df[(df['Local_Time'].dt.hour >= 10) & (df['Local_Time'].dt.hour <= 14)].copy()
-                    
-                    # Tính khoảng cách phút từ giờ ghi nhận đến đúng 12:00
-                    df_noon['diff_to_12'] = abs((df_noon['Local_Time'].dt.hour * 60 + df_noon['Local_Time'].dt.minute) - (12 * 60))
-                    
-                    # Ưu tiên dòng gần 12h nhất, nếu trùng thì lấy dòng cập nhật sau cùng
-                    df_noon = df_noon.sort_values(['Date', 'diff_to_12', 'Local_Time'])
-                    
-                    # Giữ lại đúng 1 dòng đại diện cho mỗi ngày
-                    df_12h = df_noon.drop_duplicates(subset=['Date'], keep='first').copy()
-                    
-                    # GHÉP NỐI & LÀM SẠCH BẢNG
-                    df_merged = pd.merge(df_12h, daily_min_max, on='Date', how='left')
-                    df_merged['Province'] = city
-                    
-                    # Chuyển đổi Local_Time sang string dạng Giờ:Phút để biết chính xác mốc lấy dữ liệu
-                    df_merged['Time_Recorded'] = df_merged['Local_Time'].dt.strftime('%H:%M')
-                    
-                    # Lựa chọn và sắp xếp các cột chuẩn
-                    ordered_columns = [
-                        'Province', 'Date', 'Time_Recorded', 'Min_Temp_C', 'Max_Temp_C',
-                        'temp', 'dewPt', 'rh', 'wx_phrase', 'wdir_cardinal', 
-                        'wspd', 'wgust', 'pressure', 'precip_total', 'uv_index', 'vis'
-                    ]
-                    df_clean = df_merged[ordered_columns].copy()
-                    
-                    # Đổi tên cột
-                    df_clean.columns = [
-                        'Province', 'Date', 'Time_Recorded_12h', 
-                        'Min_Temp_C_Day', 'Max_Temp_C_Day', 'Temp_C_12h', 
-                        'DewPoint_C_12h', 'Humidity_%_12h', 'Condition_12h', 
-                        'WindDirection_12h', 'WindSpeed_kmh_12h', 'WindGust_kmh_12h', 
-                        'Pressure_mb_12h', 'Precipitation_mm_12h', 'UV_Index_12h', 'Visibility_km_12h'
-                    ]
-                    
-                    all_data.append(df_clean)
-                    print(f"[OK] - Lấy được {len(df_clean)} ngày.")
+                    df['weather_date'] = df['Local_Time'].dt.strftime('%Y-%m-%d')
+
+                    daily = df.groupby('weather_date', as_index=False).agg(
+                        temperature=('temp', 'mean'),
+                        humidity=('rh', 'mean'),
+                        precipitation=('precip_total', 'sum'),
+                        wind_speed=('wspd', 'mean'),
+                        pressure=('pressure', 'mean'),
+                        wx_phrase=('wx_phrase', 'last'),
+                        wx_icon=('wx_icon', 'last')
+                    )
+
+                    daily['province'] = province
+                    daily['region'] = region
+                    daily['weather_code'] = daily.apply(map_weather_code, axis=1)
+                    daily['source'] = 'Wunderground'
+
+                    daily = daily[[
+                        'weather_date', 'province', 'region', 'temperature', 'humidity',
+                        'precipitation', 'wind_speed', 'pressure', 'weather_code', 'source'
+                    ]]
+
+                    all_data.append(daily)
+                    print(f"[OK] - Lấy được {len(daily)} ngày.")
                 else:
                     print("[!] Không có dữ liệu.")
             else:
                 print(f"[x] Lỗi API: {response.status_code}")
-                
+
         except Exception as e:
-            print(f"[x] Lỗi mạng hoặc kết nối.")
-            
-        time.sleep(1.5) # Nghỉ 1.5 giây giữa các lần gọi API để tránh bị chặn
+            print(f"[x] Lỗi mạng hoặc kết nối: {e}")
+
+        time.sleep(1.5)
 
 # Gom dữ liệu và Xuất file
 if all_data:
     final_df = pd.concat(all_data, ignore_index=True)
-    
-    # Sắp xếp tổng thể theo Tỉnh và Ngày tăng dần
-    final_df = final_df.sort_values(by=['Province', 'Date']).reset_index(drop=True)
-    
+
+    final_df = final_df.sort_values(by=['province', 'weather_date']).reset_index(drop=True)
+
+    for col in ['temperature', 'humidity', 'precipitation', 'wind_speed', 'pressure']:
+        final_df[col] = pd.to_numeric(final_df[col], errors='coerce')
+
     file_name = 'south_weather.csv'
     final_df.to_csv(file_name, index=False, encoding='utf-8-sig')
-    
-    print("\n" + "="*70)
-    print(f"Hoàn tất! Dataset với {len(final_df)} dòng và 16 cột.")
+
+    print("\n" + "=" * 70)
+    print(f"Hoàn tất! Dataset với {len(final_df)} dòng và 10 cột.")
     print(f"File lưu tại: '{file_name}'")
-    
-    # Hiển thị tóm tắt bộ dữ liệu
-    print("\nThông tin bộ dữ liệu (5 dòng đầu, 7 cột đầu):")
-    print(final_df.iloc[:, :7].head())
+    print("\nThông tin bộ dữ liệu (5 dòng đầu):")
+    print(final_df.head())
+else:
+    print("Không lấy được dữ liệu nào.")
