@@ -46,8 +46,10 @@ df['precipitation'] = df['precipitation'].clip(lower=0)
 
 # 6. Xóa dòng trùng lặp
 df = df.drop_duplicates(subset=['weather_date', 'province'])
-
-# 7. Sắp xếp cột và lưu file
+# 7. Làm tròn số thập phân
+numeric_cols = ['temperature', 'humidity', 'precipitation', 'wind_speed', 'pressure']
+df[numeric_cols] = df[numeric_cols].round(2)
+# 8. Sắp xếp cột và lưu file
 target_columns = ['weather_date', 'province', 'region', 'temperature', 'humidity', 'precipitation', 'wind_speed', 'pressure', 'weather_code', 'source']
 df = df[target_columns]
 df.to_csv('cleaned_north.csv', index=False)
