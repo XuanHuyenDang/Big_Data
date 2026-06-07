@@ -1,6 +1,7 @@
 import pandas as pd
 
 def remove_accents_by_replace(text):
+    """Hàm loại bỏ dấu tiếng Việt thủ công"""
     text = str(text)
     text = text.replace("TP.HCM", "Ho Chi Minh")
     accents = {
@@ -16,6 +17,7 @@ def remove_accents_by_replace(text):
     return text.strip()
 
 def map_south_weather_code(code):
+    """Hàm dịch mã thời tiết của Wunderground/OpenWeatherMap sang chữ"""
     try:
         c = int(float(code))
         if c == 800: return 'Clear'
@@ -23,21 +25,22 @@ def map_south_weather_code(code):
         elif 803 <= c <= 804: return 'Overcast'
         elif 200 <= c < 300: return 'Thunderstorm'
         elif 300 <= c < 400: return 'Drizzle'
-        elif 500 <= c < 600: return 'Rain'
+        elif 500 <= c < 600: return 'Moderate Rain'
         else: return 'Unknown'
     except:
         return 'Unknown'
 
-# 1. Đọc dữ liệu
+# 1. Đọc dữ liệu (File Wunderground cũ)
 df = pd.read_csv('south_weather.csv')
 
-# 2. Định dạng ngày
+# 2. Định dạng ngày 
+# LƯU Ý: File gốc đã có sẵn cột 'weather_date' nên không cần lệnh rename như file API nữa
 df['weather_date'] = pd.to_datetime(df['weather_date']).dt.strftime('%Y-%m-%d')
 
 # 3. Chuẩn hóa tên tỉnh thành
 df['province'] = df['province'].apply(remove_accents_by_replace)
 
-# 4. Cập nhật vùng miền và mã thời tiết
+# 4. Cập nhật vùng miền và DỊCH MÃ THỜI TIẾT (từ 80x sang Text)
 df['region'] = 'Southern'
 df['weather_code'] = df['weather_code'].apply(map_south_weather_code)
 
@@ -49,9 +52,11 @@ df['precipitation'] = df['precipitation'].clip(lower=0)
 
 # 6. Xóa dòng trùng lặp
 df = df.drop_duplicates(subset=['weather_date', 'province'])
-# 7. Làm tròn số thập phân
+
+# 7. Làm tròn số thập phân về 2 chữ số
 numeric_cols = ['temperature', 'humidity', 'precipitation', 'wind_speed', 'pressure']
 df[numeric_cols] = df[numeric_cols].round(2)
+
 # 8. Sắp xếp cột và lưu file
 target_columns = ['weather_date', 'province', 'region', 'temperature', 'humidity', 'precipitation', 'wind_speed', 'pressure', 'weather_code', 'source']
 df = df[target_columns]

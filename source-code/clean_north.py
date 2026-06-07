@@ -17,11 +17,23 @@ def remove_accents_by_replace(text):
 def map_north_weather_code(code):
     mapping = {
         '0': 'Clear', '1': 'Mostly Clear', '2': 'Partly Cloudy', '3': 'Overcast',
-        '45': 'Fog', '48': 'Fog', '51': 'Light Rain', '53': 'Moderate Rain', '55': 'Heavy Rain',
+        '45': 'Fog', '48': 'Depositing Rime Fog',
+        '51': 'Light Drizzle', '53': 'Moderate Drizzle', '55': 'Dense Drizzle',
+        '56': 'Light Freezing Drizzle', '57': 'Dense Freezing Drizzle',
         '61': 'Light Rain', '63': 'Moderate Rain', '65': 'Heavy Rain',
-        '71': 'Snow', '95': 'Thunderstorm'
+        '66': 'Light Freezing Rain', '67': 'Heavy Freezing Rain',
+        '71': 'Slight Snow Fall', '73': 'Moderate Snow Fall', '75': 'Heavy Snow Fall',
+        '77': 'Snow Grains',
+        '80': 'Slight Rain Showers', '81': 'Moderate Rain Showers', '82': 'Violent Rain Showers',
+        '85': 'Slight Snow Showers', '86': 'Heavy Snow Showers',
+        '95': 'Thunderstorm', '96': 'Thunderstorm with Hail', '99': 'Heavy Thunderstorm with Hail'
     }
-    return mapping.get(str(code), 'Unknown')
+    try:
+        # Chuyển về số nguyên rồi mới thành chuỗi để tránh lỗi "80.0" -> "80"
+        clean_code = str(int(float(code))) 
+        return mapping.get(clean_code, 'Unknown')
+    except:
+        return 'Unknown'
 
 # 1. Đọc dữ liệu
 df = pd.read_csv('north_weather.csv')
