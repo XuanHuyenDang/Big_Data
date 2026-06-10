@@ -4,11 +4,12 @@ import calendar
 import time
 import os
 
-# Cấu hình Trạm và API Key
+# Cấu hình Trạm và API Key với 4 trạm độc lập
 stations = {
     'TP.HCM': 'VVTS',
-    'Cần Thơ': 'VVCT',
-    'Cà Mau': 'VVCM'
+    'Cà Mau': 'VVCM',
+    'Phú Quốc': 'VVPQ',
+    'Côn Đảo': 'VVCS'
 }
 API_KEY = os.getenv("WEATHER_API_KEY", "e1f10a1e78da46f5b10a1e78da96f525")
 region = "South"
@@ -25,7 +26,7 @@ for m in range(1, 13):
 
 all_data = []
 
-# Codemap theo Weather Company icon codes
+# Codemap theo Weather Company icon codes (Giai đoạn 1: Trả về số)
 def map_weather_code(row):
     phrase = str(row.get('wx_phrase', '')).lower()
     icon = row.get('wx_icon')
@@ -119,7 +120,7 @@ def map_weather_code(row):
 
 # Vòng lặp lấy dữ liệu
 for province, code in stations.items():
-    print(f"\nĐang xử lý trạm: {province}")
+    print(f"\nĐang xử lý trạm: {province} ({code})")
 
     for start_date, end_date, month_label in date_chunks:
         print(f"Lấy tháng {month_label}...", end=" ")
@@ -135,6 +136,7 @@ for province, code in stations.items():
                 if records:
                     df = pd.DataFrame(records)
 
+                    # Đảm bảo các cột cần thiết tồn tại trước khi xử lý
                     for col in ['valid_time_gmt', 'temp', 'rh', 'wspd', 'pressure', 'precip_total', 'wx_phrase', 'wx_icon']:
                         if col not in df.columns:
                             df[col] = pd.NA
@@ -155,12 +157,7 @@ for province, code in stations.items():
                     daily['province'] = province
                     daily['region'] = region
                     daily['weather_code'] = daily.apply(map_weather_code, axis=1)
-                    daily['source'] = 'Wunderground'
-
-                    daily = daily[[
-                        'weather_date', 'province', 'region', 'temperature', 'humidity',
-                        'precipitation', 'wind_speed', 'pressure', 'weather_code', 'source'
-                    ]]
+                    daily['source'] = 'Weather.com API'
 
                     all_data.append(daily)
                     print(f"[OK] - Lấy được {len(daily)} ngày.")
@@ -172,22 +169,43 @@ for province, code in stations.items():
         except Exception as e:
             print(f"[x] Lỗi mạng hoặc kết nối: {e}")
 
+        # Tránh bị API rate limit
         time.sleep(1.5)
 
-# Gom dữ liệu và Xuất file
+# Gom dữ liệu, Chuẩn hóa và Xuất file
 if all_data:
     final_df = pd.concat(all_data, ignore_index=True)
-
     final_df = final_df.sort_values(by=['province', 'weather_date']).reset_index(drop=True)
 
-    for col in ['temperature', 'humidity', 'precipitation', 'wind_speed', 'pressure']:
-        final_df[col] = pd.to_numeric(final_df[col], errors='coerce')
+    # Chuyển đổi weather_code từ Số sang Chữ
+    weather_mapping = {
+        200: "Thunderstorms", 300: "Drizzle", 500: "Rain", 511: "Freezing Rain",
+        520: "Heavy Rain", 521: "Showers", 600: "Snow", 602: "Blizzard",
+        610: "Rain / Snow", 611: "Sleet", 621: "Snow Showers", 622: "Heavy Snow",
+        711: "Smoke", 721: "Haze", 741: "Foggy", 751: "Dust / Sandstorm",
+        781: "Windy", 800: "Clear", 801: "Mostly Clear", 802: "Partly Cloudy",
+        803: "Mostly Cloudy", 804: "Cloudy", 906: "Hail", 999: "Not Available"
+    }
+    final_df['weather_code'] = final_df['weather_code'].map(weather_mapping).fillna('Unknown')
 
-    file_name = 'south_weather.csv'
+    # Làm tròn các cột số thập phân lấy 2 chữ số
+    numeric_cols = ['temperature', 'humidity', 'precipitation', 'wind_speed', 'pressure']
+    for col in numeric_cols:
+        final_df[col] = pd.to_numeric(final_df[col], errors='coerce').round(2)
+
+    # Chỉ lấy chính xác các cột được yêu cầu
+    columns_to_keep = [
+        'weather_date', 'province', 'region', 'temperature', 
+        'humidity', 'precipitation', 'wind_speed', 'pressure', 
+        'weather_code', 'source'
+    ]
+    final_df = final_df[columns_to_keep]
+
+    # Xuất file cuối cùng
+    file_name = 'south_weather_final.csv'
     final_df.to_csv(file_name, index=False, encoding='utf-8-sig')
 
-    print("\n" + "=" * 70)
-    print(f"Hoàn tất! Dataset với {len(final_df)} dòng và 10 cột.")
+    print(f"Hoàn tất Crawl, Dataset với {len(final_df)} dòng và {len(final_df.columns)} cột.")
     print(f"File lưu tại: '{file_name}'")
     print("\nThông tin bộ dữ liệu (5 dòng đầu):")
     print(final_df.head())
