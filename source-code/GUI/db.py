@@ -179,3 +179,82 @@ class WeatherDatabase:
         rows = cursor.fetchall()
         cursor.close()
         return [row[0] for row in rows]
+    
+
+    def get_all_for_export(self):
+        cursor = self.connection.cursor(dictionary=True)
+
+        cursor.execute("""
+            SELECT
+                 weather_date,
+                province,
+                region,
+                temperature,
+                humidity,
+                precipitation,
+                wind_speed,
+                pressure,
+                weather_code
+            FROM weather_data
+            ORDER BY weather_date
+        """)
+
+        rows = cursor.fetchall()
+        cursor.close()
+
+        return rows
+    
+    def clear_table(self):
+        cursor = self.connection.cursor()
+
+        cursor.execute("""
+            DELETE FROM weather_data
+        """)
+
+        self.connection.commit()
+        cursor.close()
+
+
+    def insert_many(self, records):
+        cursor = self.connection.cursor()
+
+        sql = """
+        INSERT INTO weather_data
+        (
+            weather_date,
+            province,
+            region,
+            temperature,
+            humidity,
+            precipitation,
+            wind_speed,
+            pressure,
+            weather_code,
+            source
+        )
+        VALUES
+        (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+        """
+
+        values = []
+
+        for row in records:
+            values.append((
+                row["weather_date"],
+                row["province"],
+                row["region"],
+                row["temperature"],
+                row["humidity"],
+                row["precipitation"],
+                row["wind_speed"],
+                row["pressure"],
+                row["weather_code"],
+                "RESTORE"
+            ))
+
+        cursor.executemany(sql, values)
+
+        self.connection.commit()
+        cursor.close()
+
+    

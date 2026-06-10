@@ -1,29 +1,32 @@
-
 import customtkinter as ctk
 from tkinter import ttk, messagebox
 from db import WeatherDatabase
 import tkinter as tk
+import pandas as pd
+import os
+from tkinter import filedialog
+from datetime import datetime
  
  
-ctk.set_appearance_mode("dark")
+ctk.set_appearance_mode("light")
 ctk.set_default_color_theme("blue")
  
-BG_DEEP      = "#0A0C10"
-BG_PANEL     = "#0F1218"
-BG_CARD      = "#141820"
-BG_INPUT     = "#1A1F2E"
-BG_TABLE_ODD = "#10141C"
-BG_TABLE_EVN = "#141820"
+BG_DEEP      = "#D8E4EE"   # nền toàn màn hình
+BG_PANEL     = "#C5D5E4"   # sidebar
+BG_CARD      = "#E6EFF6"   # card / form
+BG_INPUT     = "#EDF3F8"   # ô nhập liệu
+BG_TABLE_ODD = "#DDE8F2"   # hàng lẻ
+BG_TABLE_EVN = "#E8F0F7"   # hàng chẵn
  
-GOLD         = "#C9A84C"
-GOLD_LIGHT   = "#E8C97A"
-GOLD_DIM     = "#6B5527"
-SILVER       = "#8A9BB0"
-TEXT_MAIN    = "#E8ECF4"
-TEXT_DIM     = "#5A6478"
+GOLD         = "#2C6E9E"   # xanh dương – accent
+GOLD_LIGHT   = "#4A8EB5"   # xanh sáng – hover
+GOLD_DIM     = "#93BAD5"   # xanh mờ – viền
+SILVER       = "#2E5470"   # chữ phụ
+TEXT_MAIN    = "#0D2233"   # chữ chính
+TEXT_DIM     = "#8AAFC4"   # chữ mờ
  
-RED_BTN      = "#7C2D2D"
-RED_HOVER    = "#A33A3A"
+RED_BTN      = "#EDE0E0"   # nền nút xóa
+RED_HOVER    = "#E2CECE"   # hover nút xóa
  
  
 class WeatherGUI(ctk.CTk):
@@ -53,13 +56,13 @@ class WeatherGUI(ctk.CTk):
             bordercolor=GOLD_DIM,
             borderwidth=0,
             rowheight=34,
-            font=("Times New Roman", 11),
+            font=("Segoe UI", 11, "bold"),
         )
         style.configure(
             "Luxury.Treeview.Heading",
             background=BG_PANEL,
             foreground=GOLD,
-            font=("Times New Roman", 11, "bold"),
+            font=("Segoe UI", 11, "bold"),
             borderwidth=0,
             relief="flat",
         )
@@ -151,12 +154,12 @@ class WeatherGUI(ctk.CTk):
         logo_frame = ctk.CTkFrame(self.sidebar, fg_color="transparent")
         logo_frame.pack(pady=(28, 0), padx=20)
  
-        ctk.CTkLabel(logo_frame, text="⬡", font=("Times New Roman", 30), text_color=GOLD).pack()
-        ctk.CTkLabel(logo_frame, text="V I E T N A M", font=("Times New Roman", 15, "bold"), text_color=GOLD).pack()
+        ctk.CTkLabel(logo_frame, text="🌥", font=("Arial", 32), text_color=GOLD).pack()
+        ctk.CTkLabel(logo_frame, text="V I E T N A M", font=("Segoe UI", 15, "bold"), text_color=GOLD).pack()
         ctk.CTkLabel(
             logo_frame,
             text="W E A T H E R  I N T E L L I G E N C E",
-            font=("Times New Roman", 8),
+            font=("Segoe UI", 8),
             text_color=SILVER,
         ).pack(pady=(2, 0))
  
@@ -164,7 +167,7 @@ class WeatherGUI(ctk.CTk):
  
         self.status_dot = ctk.CTkLabel(
             self.sidebar, text="● DB: Chưa kết nối",
-            font=("Times New Roman", 12), text_color="#CC4444",
+            font=("Segoe UI", 12), text_color="#9B3A3A",
         )
         self.status_dot.pack(pady=(16, 10))
  
@@ -191,12 +194,12 @@ class WeatherGUI(ctk.CTk):
     def _sidebar_button(self, text, command, danger=False):
         fg    = RED_BTN   if danger else BG_CARD
         hover = RED_HOVER if danger else BG_INPUT
-        tc    = "#E07070" if danger else TEXT_MAIN
+        tc    = "#9B3A3A" if danger else TEXT_MAIN
  
         btn = ctk.CTkButton(
             self.sidebar, text=text, command=command,
             fg_color=fg, hover_color=hover, text_color=tc,
-            font=("Times New Roman", 13), corner_radius=6,
+            font=("Segoe UI", 13), corner_radius=6,
             border_width=1,
             border_color=GOLD_DIM if not danger else RED_BTN,
             height=40, anchor="w",
@@ -211,7 +214,7 @@ class WeatherGUI(ctk.CTk):
         tk.Label(
             header_frame,
             text="QUẢN LÝ DỮ LIỆU THỜI TIẾT",
-            font=("Times New Roman", 20, "bold"),
+            font=("Segoe UI", 20, "bold"),
             fg=GOLD, bg=BG_DEEP,
         ).pack(side="left")
  
@@ -226,7 +229,7 @@ class WeatherGUI(ctk.CTk):
     def _section_label(self, parent, text):
         f = tk.Frame(parent, bg=BG_DEEP)
         f.pack(fill="x", padx=24, pady=(6, 2))
-        tk.Label(f, text=text, font=("Times New Roman", 10), fg=GOLD_DIM, bg=BG_DEEP).pack(side="left")
+        tk.Label(f, text=text, font=("Segoe UI", 10), fg=GOLD, bg=BG_DEEP).pack(side="left")
         tk.Frame(f, bg=GOLD_DIM, height=1).pack(side="left", fill="x", expand=True, padx=8)
  
     # ── Thống kê ──────────────────────────────────────────────────────────────
@@ -252,11 +255,11 @@ class WeatherGUI(ctk.CTk):
             card.pack(side="left", fill="x", expand=True, padx=4)
  
             tk.Label(card, text=icon, font=("Arial", 16), bg=BG_CARD).pack(pady=(8, 0))
-            tk.Label(card, text=label, font=("Times New Roman", 9), fg=SILVER, bg=BG_CARD).pack()
+            tk.Label(card, text=label, font=("Segoe UI", 9, "bold"), fg=SILVER, bg=BG_CARD).pack()
  
             val_lbl = tk.Label(
                 card, text="—",
-                font=("Times New Roman", 15, "bold"),
+                font=("Segoe UI", 15, "bold"),
                 fg=GOLD_LIGHT, bg=BG_CARD,
             )
             val_lbl.pack(pady=(1, 8))
@@ -276,7 +279,7 @@ class WeatherGUI(ctk.CTk):
         entry_style = dict(
             fg_color=BG_INPUT, text_color=TEXT_MAIN,
             border_color=GOLD_DIM, border_width=1,
-            font=("Times New Roman", 12), corner_radius=6,
+            font=("Segoe UI", 12), corner_radius=6,
         )
  
         self.filter_province = ctk.CTkEntry(filter_frame, placeholder_text="Tỉnh / Thành phố", **entry_style)
@@ -294,14 +297,14 @@ class WeatherGUI(ctk.CTk):
         ctk.CTkButton(
             filter_frame, text="Lọc", width=80, command=self.search_data,
             fg_color=GOLD_DIM, hover_color=GOLD, text_color=BG_DEEP,
-            font=("Times New Roman", 12, "bold"), corner_radius=6,
+            font=("Segoe UI", 12, "bold"), corner_radius=6,
         ).pack(side="left", padx=5, pady=8)
  
         ctk.CTkButton(
             filter_frame, text="Reset", width=80, command=self.reset_filter,
             fg_color=BG_INPUT, hover_color=BG_CARD, text_color=SILVER,
             border_width=1, border_color=GOLD_DIM,
-            font=("Times New Roman", 12), corner_radius=6,
+            font=("Segoe UI", 12), corner_radius=6,
         ).pack(side="left", padx=5, pady=8)
  
     # ── Form nhập liệu ────────────────────────────────────────────────────────
@@ -338,14 +341,14 @@ class WeatherGUI(ctk.CTk):
  
             ctk.CTkLabel(
                 cell, text=label,
-                font=("Times New Roman", 10), text_color=SILVER, anchor="w",
+                font=("Segoe UI", 11, "bold"), text_color=SILVER, anchor="w",
             ).pack(anchor="w", padx=2)
  
             entry = ctk.CTkEntry(
                 cell,
                 fg_color=BG_INPUT, text_color=TEXT_MAIN,
                 border_color=GOLD_DIM, border_width=1,
-                font=("Times New Roman", 12), corner_radius=6, height=32,
+                font=("Segoe UI", 12), corner_radius=6, height=32,
             )
             entry.pack(fill="x", pady=(2, 0))
             self.entries[field] = entry
@@ -358,7 +361,7 @@ class WeatherGUI(ctk.CTk):
         btn_frame = ctk.CTkFrame(self.main_frame, fg_color="transparent")
         btn_frame.pack(fill="x", padx=24, pady=5)
  
-        btn_cfg = dict(font=("Times New Roman", 13, "bold"), corner_radius=8, height=38, border_width=1)
+        btn_cfg = dict(font=("Segoe UI", 13, "bold"), corner_radius=8, height=38, border_width=1)
  
         ctk.CTkButton(
             btn_frame, text="＋  Thêm bản ghi", command=self.add_data,
@@ -374,8 +377,29 @@ class WeatherGUI(ctk.CTk):
  
         ctk.CTkButton(
             btn_frame, text="✕  Xóa", command=self.delete_data,
-            fg_color=RED_BTN, hover_color=RED_HOVER, text_color="#E07070",
+            fg_color=RED_BTN, hover_color=RED_HOVER, text_color="#9B3A3A",
             border_color=RED_HOVER, **btn_cfg,
+        ).pack(side="left", padx=10)
+
+        # Divider nhỏ giữa 2 nhóm nút
+        tk.Frame(btn_frame, bg=GOLD_DIM, width=1).pack(side="left", fill="y", padx=14, pady=6)
+
+        ctk.CTkButton(
+            btn_frame, text="⬇  Xuất CSV", command=self.export_csv,
+            fg_color=BG_INPUT, hover_color=BG_CARD, text_color=GOLD,
+            border_color=GOLD_DIM, **btn_cfg,
+        ).pack(side="left", padx=(0, 10))
+
+        ctk.CTkButton(
+            btn_frame, text="💾  Backup", command=self.backup_data,
+            fg_color=BG_INPUT, hover_color=BG_CARD, text_color=GOLD,
+            border_color=GOLD_DIM, **btn_cfg,
+        ).pack(side="left", padx=10)
+
+        ctk.CTkButton(
+            btn_frame, text="⬆  Restore", command=self.restore_data,
+            fg_color=BG_INPUT, hover_color=BG_CARD, text_color=GOLD,
+            border_color=GOLD_DIM, **btn_cfg,
         ).pack(side="left", padx=10)
  
     # ── Bảng dữ liệu ─────────────────────────────────────────────────────────
@@ -439,11 +463,11 @@ class WeatherGUI(ctk.CTk):
         try:
             self.db = WeatherDatabase()
             self.db.test_connection()
-            self.status_dot.configure(text="● DB: Đã kết nối MySQL", text_color="#4CAF50")
+            self.status_dot.configure(text="● DB: Đã kết nối MySQL", text_color="#2E7D4F")
             self.load_data()
             self.load_statistics()
         except Exception as e:
-            self.status_dot.configure(text="● DB: Lỗi kết nối", text_color="#CC4444")
+            self.status_dot.configure(text="● DB: Lỗi kết nối", text_color="#9B3A3A")
             messagebox.showerror("Lỗi kết nối MySQL", f"Không thể kết nối MySQL.\n\nChi tiết lỗi:\n{e}")
  
     def load_data(self):
@@ -598,9 +622,61 @@ class WeatherGUI(ctk.CTk):
             entry.delete(0, "end")
  
  
+    def export_csv(self):
+        try:
+            data = self.db.get_all_for_export()
+            if not data:
+                messagebox.showwarning("Thông báo", "Không có dữ liệu.")
+                return
+            file_path = filedialog.asksaveasfilename(
+                defaultextension=".csv",
+                filetypes=[("CSV Files", "*.csv")]
+            )
+            if not file_path:
+                return
+            df = pd.DataFrame(data)
+            df.to_csv(file_path, index=False, encoding="utf-8-sig")
+            messagebox.showinfo("Thành công", "Xuất CSV thành công.")
+        except Exception as e:
+            messagebox.showerror("Lỗi", str(e))
+
+    def backup_data(self):
+        try:
+            data = self.db.get_all_for_export()
+            if not data:
+                messagebox.showwarning("Thông báo", "Không có dữ liệu để backup.")
+                return
+            os.makedirs("backup", exist_ok=True)
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            filename = f"backup/weather_backup_{timestamp}.csv"
+            df = pd.DataFrame(data)
+            df.to_csv(filename, index=False, encoding="utf-8-sig")
+            messagebox.showinfo("Backup thành công", filename)
+        except Exception as e:
+            messagebox.showerror("Lỗi", str(e))
+
+    def restore_data(self):
+        file_path = filedialog.askopenfilename(
+            filetypes=[("CSV Files", "*.csv")]
+        )
+        if not file_path:
+            return
+        confirm = messagebox.askyesno(
+            "Xác nhận",
+            "Restore sẽ thêm lại dữ liệu từ file CSV.\nTiếp tục?"
+        )
+        if not confirm:
+            return
+        try:
+            df = pd.read_csv(file_path)
+            records = df.to_dict(orient="records")
+            self.db.insert_many(records)
+            self.load_data()
+            messagebox.showinfo("Thành công", "Restore hoàn tất.")
+        except Exception as e:
+            messagebox.showerror("Lỗi", str(e))
+
+
 if __name__ == "__main__":
     app = WeatherGUI()
     app.mainloop()
- 
-
-
