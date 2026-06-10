@@ -53,13 +53,13 @@ class WeatherGUI(ctk.CTk):
             bordercolor=GOLD_DIM,
             borderwidth=0,
             rowheight=34,
-            font=("Georgia", 11),
+            font=("Times New Roman", 11),
         )
         style.configure(
             "Luxury.Treeview.Heading",
             background=BG_PANEL,
             foreground=GOLD,
-            font=("Georgia", 11, "bold"),
+            font=("Times New Roman", 11, "bold"),
             borderwidth=0,
             relief="flat",
         )
@@ -151,12 +151,12 @@ class WeatherGUI(ctk.CTk):
         logo_frame = ctk.CTkFrame(self.sidebar, fg_color="transparent")
         logo_frame.pack(pady=(28, 0), padx=20)
  
-        ctk.CTkLabel(logo_frame, text="⬡", font=("Georgia", 30), text_color=GOLD).pack()
-        ctk.CTkLabel(logo_frame, text="V I E T N A M", font=("Georgia", 15, "bold"), text_color=GOLD).pack()
+        ctk.CTkLabel(logo_frame, text="⬡", font=("Times New Roman", 30), text_color=GOLD).pack()
+        ctk.CTkLabel(logo_frame, text="V I E T N A M", font=("Times New Roman", 15, "bold"), text_color=GOLD).pack()
         ctk.CTkLabel(
             logo_frame,
             text="W E A T H E R  I N T E L L I G E N C E",
-            font=("Georgia", 8),
+            font=("Times New Roman", 8),
             text_color=SILVER,
         ).pack(pady=(2, 0))
  
@@ -164,7 +164,7 @@ class WeatherGUI(ctk.CTk):
  
         self.status_dot = ctk.CTkLabel(
             self.sidebar, text="● DB: Chưa kết nối",
-            font=("Georgia", 12), text_color="#CC4444",
+            font=("Times New Roman", 12), text_color="#CC4444",
         )
         self.status_dot.pack(pady=(16, 10))
  
@@ -196,7 +196,7 @@ class WeatherGUI(ctk.CTk):
         btn = ctk.CTkButton(
             self.sidebar, text=text, command=command,
             fg_color=fg, hover_color=hover, text_color=tc,
-            font=("Georgia", 13), corner_radius=6,
+            font=("Times New Roman", 13), corner_radius=6,
             border_width=1,
             border_color=GOLD_DIM if not danger else RED_BTN,
             height=40, anchor="w",
@@ -211,7 +211,7 @@ class WeatherGUI(ctk.CTk):
         tk.Label(
             header_frame,
             text="QUẢN LÝ DỮ LIỆU THỜI TIẾT",
-            font=("Georgia", 20, "bold"),
+            font=("Times New Roman", 20, "bold"),
             fg=GOLD, bg=BG_DEEP,
         ).pack(side="left")
  
@@ -226,7 +226,7 @@ class WeatherGUI(ctk.CTk):
     def _section_label(self, parent, text):
         f = tk.Frame(parent, bg=BG_DEEP)
         f.pack(fill="x", padx=24, pady=(6, 2))
-        tk.Label(f, text=text, font=("Georgia", 10), fg=GOLD_DIM, bg=BG_DEEP).pack(side="left")
+        tk.Label(f, text=text, font=("Times New Roman", 10), fg=GOLD_DIM, bg=BG_DEEP).pack(side="left")
         tk.Frame(f, bg=GOLD_DIM, height=1).pack(side="left", fill="x", expand=True, padx=8)
  
     # ── Thống kê ──────────────────────────────────────────────────────────────
@@ -252,11 +252,11 @@ class WeatherGUI(ctk.CTk):
             card.pack(side="left", fill="x", expand=True, padx=4)
  
             tk.Label(card, text=icon, font=("Arial", 16), bg=BG_CARD).pack(pady=(8, 0))
-            tk.Label(card, text=label, font=("Georgia", 9), fg=SILVER, bg=BG_CARD).pack()
+            tk.Label(card, text=label, font=("Times New Roman", 9), fg=SILVER, bg=BG_CARD).pack()
  
             val_lbl = tk.Label(
                 card, text="—",
-                font=("Georgia", 15, "bold"),
+                font=("Times New Roman", 15, "bold"),
                 fg=GOLD_LIGHT, bg=BG_CARD,
             )
             val_lbl.pack(pady=(1, 8))
@@ -276,7 +276,7 @@ class WeatherGUI(ctk.CTk):
         entry_style = dict(
             fg_color=BG_INPUT, text_color=TEXT_MAIN,
             border_color=GOLD_DIM, border_width=1,
-            font=("Georgia", 12), corner_radius=6,
+            font=("Times New Roman", 12), corner_radius=6,
         )
  
         self.filter_province = ctk.CTkEntry(filter_frame, placeholder_text="Tỉnh / Thành phố", **entry_style)
@@ -294,14 +294,14 @@ class WeatherGUI(ctk.CTk):
         ctk.CTkButton(
             filter_frame, text="Lọc", width=80, command=self.search_data,
             fg_color=GOLD_DIM, hover_color=GOLD, text_color=BG_DEEP,
-            font=("Georgia", 12, "bold"), corner_radius=6,
+            font=("Times New Roman", 12, "bold"), corner_radius=6,
         ).pack(side="left", padx=5, pady=8)
  
         ctk.CTkButton(
             filter_frame, text="Reset", width=80, command=self.reset_filter,
             fg_color=BG_INPUT, hover_color=BG_CARD, text_color=SILVER,
             border_width=1, border_color=GOLD_DIM,
-            font=("Georgia", 12), corner_radius=6,
+            font=("Times New Roman", 12), corner_radius=6,
         ).pack(side="left", padx=5, pady=8)
  
     # ── Form nhập liệu ────────────────────────────────────────────────────────
@@ -338,14 +338,14 @@ class WeatherGUI(ctk.CTk):
  
             ctk.CTkLabel(
                 cell, text=label,
-                font=("Georgia", 10), text_color=SILVER, anchor="w",
+                font=("Times New Roman", 10), text_color=SILVER, anchor="w",
             ).pack(anchor="w", padx=2)
  
             entry = ctk.CTkEntry(
                 cell,
                 fg_color=BG_INPUT, text_color=TEXT_MAIN,
                 border_color=GOLD_DIM, border_width=1,
-                font=("Georgia", 12), corner_radius=6, height=32,
+                font=("Times New Roman", 12), corner_radius=6, height=32,
             )
             entry.pack(fill="x", pady=(2, 0))
             self.entries[field] = entry
@@ -358,7 +358,7 @@ class WeatherGUI(ctk.CTk):
         btn_frame = ctk.CTkFrame(self.main_frame, fg_color="transparent")
         btn_frame.pack(fill="x", padx=24, pady=5)
  
-        btn_cfg = dict(font=("Georgia", 13, "bold"), corner_radius=8, height=38, border_width=1)
+        btn_cfg = dict(font=("Times New Roman", 13, "bold"), corner_radius=8, height=38, border_width=1)
  
         ctk.CTkButton(
             btn_frame, text="＋  Thêm bản ghi", command=self.add_data,
