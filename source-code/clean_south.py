@@ -16,22 +16,22 @@ def remove_accents_by_replace(text):
             text = text.replace(char, non_accent)
     return text.strip()
 
-def map_south_weather_code(code):
-    """Hàm dịch mã thời tiết của Wunderground/OpenWeatherMap sang chữ"""
-    try:
-        c = int(float(code))
-        if c == 800: return 'Clear'
-        elif 801 <= c <= 802: return 'Partly Cloudy'
-        elif 803 <= c <= 804: return 'Overcast'
-        elif 200 <= c < 300: return 'Thunderstorm'
-        elif 300 <= c < 400: return 'Drizzle'
-        elif 500 <= c < 600: return 'Moderate Rain'
-        else: return 'Unknown'
-    except:
-        return 'Unknown'
+# def map_south_weather_code(code):
+#     """Hàm dịch mã thời tiết của Wunderground/OpenWeatherMap sang chữ"""
+#     try:
+#         c = int(float(code))
+#         if c == 800: return 'Clear'
+#         elif 801 <= c <= 802: return 'Partly Cloudy'
+#         elif 803 <= c <= 804: return 'Overcast'
+#         elif 200 <= c < 300: return 'Thunderstorm'
+#         elif 300 <= c < 400: return 'Drizzle'
+#         elif 500 <= c < 600: return 'Moderate Rain'
+#         else: return 'Unknown'
+#     except:
+#         return 'Unknown'
 
 # 1. Đọc dữ liệu (File Wunderground cũ)
-df = pd.read_csv('south_weather.csv')
+df = pd.read_csv('south_weather.csv', encoding='ansi')
 
 # 2. Định dạng ngày 
 # LƯU Ý: File gốc đã có sẵn cột 'weather_date' nên không cần lệnh rename như file API nữa
@@ -42,7 +42,7 @@ df['province'] = df['province'].apply(remove_accents_by_replace)
 
 # 4. Cập nhật vùng miền và DỊCH MÃ THỜI TIẾT (từ 80x sang Text)
 df['region'] = 'Southern'
-df['weather_code'] = df['weather_code'].apply(map_south_weather_code)
+df['weather_code'] = df['weather_code']
 
 # 5. Xử lý Outliers & Missing values
 df = df.dropna(subset=['temperature', 'humidity'])

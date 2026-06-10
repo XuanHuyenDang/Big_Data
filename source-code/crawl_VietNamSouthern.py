@@ -8,8 +8,8 @@ import os
 stations = {
     'TP.HCM': 'VVTS',
     'Cà Mau': 'VVCM',
-    'Phú Quốc': 'VVPQ',
-    'Côn Đảo': 'VVCS'
+    'Phu Quoc': 'VVPQ',
+    'Con Dao': 'VVCS'
 }
 API_KEY = os.getenv("WEATHER_API_KEY", "e1f10a1e78da46f5b10a1e78da96f525")
 region = "South"
