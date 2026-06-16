@@ -30,7 +30,7 @@ def remove_accents_by_replace(text):
 #     except:
 #         return 'Unknown'
 
-# 1. Đọc dữ liệu (File Wunderground cũ)
+# 1. Đọc dữ liệu (File Wunderground)
 df = pd.read_csv('south_weather.csv', encoding='ansi')
 
 # 2. Định dạng ngày 

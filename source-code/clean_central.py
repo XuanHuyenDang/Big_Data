@@ -15,7 +15,7 @@ def remove_accents_by_replace(text):
     return text.strip()
 
 def map_text_weather_code(text):
-    """Hàm dành riêng cho file Miền Trung cũ: Dịch Chữ sang Chữ chuẩn"""
+    """Hàm dành riêng cho file Miền Trung: Dịch Chữ sang Chữ chuẩn"""
     text = str(text).strip().title()
     mapping = {
         'Clear': 'Clear',

@@ -1,9 +1,10 @@
-# Ứng dụng Hadoop Ecosystem trong phân tích dữ liệu thời tiết tại Việt Nam
+# Ứng dụng Hadoop Ecosystem trong phân tích dữ liệu thời tiết tại Việt Nam năm 2025
 
 
 ## ----- Thông tin đề tài ---------------------
+
 STT: 03
-Tên đề tài: Ứng dụng Hadoop Ecosystem trong phân tích dữ liệu thời tiết tại Việt Nam
+Tên đề tài: Ứng dụng Hadoop Ecosystem trong phân tích dữ liệu thời tiết tại Việt Nam năm 2025
 Lớp học phần: BDES333877_04
 Năm học: HK2/2025-2026
 --------------------------------------------
