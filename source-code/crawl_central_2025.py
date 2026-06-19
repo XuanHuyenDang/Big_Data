@@ -24,7 +24,6 @@ for pkg in required_packages:
     except:
         install(pkg)
 
-# ĐỔI SANG 2025
 START_DATE = datetime(2025, 1, 1)
 END_DATE = datetime(2025, 12, 31)
 
@@ -58,7 +57,6 @@ locations = [
 
 ]
 
-# MAP weather code thật
 weather_map = {
     1: "Clear",
     2: "Fair",
@@ -108,7 +106,7 @@ def process_location(loc):
 
         data = data.reset_index()
 
-        # CHỈ GIỮ CỘT CẦN
+        # GIỮ CỘT CẦN LẤY
         data["date"] = data["time"].dt.date
 
         # GROUP THEO NGÀY
@@ -135,7 +133,7 @@ def process_location(loc):
         # Nhiệt độ trung bình
         df["temperature"] = daily["temp"]
 
-        # HUMIDITY THẬT
+        # HUMIDITY trung bình
         df["humidity"] = daily["rhum"]
 
         # Lượng mưa
@@ -147,7 +145,7 @@ def process_location(loc):
         # Áp suất
         df["pressure"] = daily["pres"]
 
-        # WEATHER CODE THẬT
+        # WEATHER CODE
         df["weather_code"] = daily["coco"].map(weather_map)
 
         df["source"] = "Meteostat Hourly"
