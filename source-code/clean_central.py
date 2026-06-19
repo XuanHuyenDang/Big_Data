@@ -46,7 +46,7 @@ df['province'] = df['province'].apply(remove_accents_by_replace)
 # 4. Cập nhật vùng miền
 df['region'] = 'Central'
 
-# 5. DỊCH MÃ THỜI TIẾT (Khắc phục lỗi Unknown)
+# 5. DỊCH MÃ THỜI TIẾT 
 df['weather_code'] = df['weather_code'].apply(map_text_weather_code)
 
 # 6. Xử lý Outliers & Missing values
@@ -66,4 +66,4 @@ df[numeric_cols] = df[numeric_cols].round(2)
 target_columns = ['weather_date', 'province', 'region', 'temperature', 'humidity', 'precipitation', 'wind_speed', 'pressure', 'weather_code', 'source']
 df = df[target_columns]
 df.to_csv('cleaned_central.csv', index=False)
-print("Đã làm sạch xong file Miền Trung và sửa lỗi Unknown: cleaned_central.csv")
+print("Đã làm sạch xong file Miền Trung: cleaned_central.csv")
